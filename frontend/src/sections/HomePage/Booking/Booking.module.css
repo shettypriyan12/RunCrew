@@ -1,0 +1,842 @@
+.s7 {
+    background-color: #171717;
+}
+
+.booking {
+    padding: 100px 0;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.bookingleft {
+    width: 80%;
+    display: flex;
+}
+
+.bookingcontent {
+    display: flex;
+    flex-direction: column;
+    white-space: wrap;
+    margin: 0 10% 0 0;
+    padding: 2% 3%;
+}
+
+.bookingcontent p:nth-child(1) {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+
+.bookingcontent h1 {
+    font-size: 3.6em;
+    width: 450px;
+    line-height: 96%;
+    font-weight: 600;
+}
+
+.bookingcontent h1 span {
+    margin: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+.bookingcontent p:nth-child(3) {
+    width: 404px;
+    color: #cbcbcb;
+    font-size: 18px;
+    margin: 0;
+    padding: 7% 0;
+    line-height: 30px;
+}
+
+.bookingcontent button {
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 500;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 15px 48px;
+    letter-spacing: 1.4px;
+}
+
+.bookingcontent button:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.bookingright {
+    position: relative;
+}
+
+.bookimg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.bookimg img {
+    width: 90%;
+    object-fit: cover;
+}
+
+.prize,
+.registered {
+    position: absolute;
+}
+
+.prize {
+    width: 256px;
+    left: -18%;
+    bottom: 20px;
+    background-color: #0343c0;
+    padding: 27px 38px;
+}
+
+.prize h4 {
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 0 0 1px;
+}
+
+.prize h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.prize p {
+    margin: 0;
+    font-size: 17px;
+    color: #cbcbcb;
+    text-shadow: 0 0 .5px;
+    /* width: 99%; */
+}
+
+.registered {
+    width: 256px;
+    left: 37%;
+    bottom: 20px;
+    background-color: #212121;
+    padding: 27px 38px 38px;
+}
+
+.registered h4 {
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 0 0 1px;
+}
+
+.registered h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.registered p {
+    font-size: 17px;
+    color: #cbcbcb;
+    text-shadow: 0 0 .5px;
+}
+
+.contacthead {
+    background-color: #0343c0;
+    /* display: flex; */
+    position: relative;
+    overflow: hidden;
+}
+
+.contacthead .headbg {
+    white-space: nowrap;
+}
+
+.headbg h2 {
+    font-size: 17em;
+    margin: 0;
+    line-height: .8em;
+    font-weight: 600;
+    letter-spacing: -8px;
+    position: absolute;
+    bottom: 0%;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.headbg h2:nth-child(1) {
+    text-transform: uppercase;
+    text-align: start;
+    letter-spacing: -12px;
+    right: 59.5%;
+    z-index: 0;
+}
+
+.headbg h2:nth-child(2) {
+    font-family: "Barlow Condensed", sans-serif;
+    left: 38.5%;
+    letter-spacing: -11px;
+}
+
+.headbg h2 i {
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+
+.contacthead .headft {
+    width: 100%;
+    padding: 4% 0;
+}
+
+.headft h1 {
+    width: 85%;
+    font-size: 3.6em;
+    font-weight: 600;
+    margin: 0 0 0 -26.5%;
+    padding: 0 60px 4px 0;
+    text-align: end;
+
+    text-transform: uppercase;
+    background-color: #171717;
+}
+
+.headft h1 span {
+    color: white;
+    display: inline-block;
+    padding: 3px 0 3px;
+    transform: skewX(21deg);
+    letter-spacing: -1px;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+@media (max-width :324.98px) {
+
+    .booking {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px 20px 60px;
+        margin: 0;
+    }
+
+    .bookingleft {
+        width: 100%;
+    }
+
+    .bookingcontent {
+        margin: 0;
+        padding: 0 0 5%;
+    }
+
+    .bookingcontent p:nth-child(1) {
+        margin: 0 0 8px;
+    }
+
+    .bookingcontent h1 {
+        width: 100%;
+        font-size: 1.6em;
+    }
+
+    .bookingcontent p:nth-child(3) {
+        width: 100%;
+        font-size: 16px;
+        padding: 2% 0 4%;
+        line-height: 28px;
+    }
+
+    .bookingcontent button {
+        font-size: 13px;
+        padding: 12px 42px;
+    }
+
+    .bookimg {
+        padding: 0;
+    }
+
+    .bookimg img {
+        width: 100%;
+    }
+
+    .prize {
+        width: 130px;
+        padding: 10px;
+        left: 0;
+        bottom: -8%;
+    }
+
+    .prize h4 {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .prize h1 {
+        font-size: 44px;
+        margin: 0;
+    }
+
+    .prize p {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .registered {
+        width: 130px;
+        padding: 10px;
+        left: 52%;
+        bottom: -8%;
+    }
+
+    .registered h4 {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .registered h1 {
+        font-size: 44px;
+        margin: 0;
+    }
+
+    .registered p {
+        font-size: 16px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 424.98px) {
+
+    .contacthead .headft {
+        padding: 11% 0;
+    }
+
+    .headft h1 {
+        width: 100%;
+        margin: 0 0 0 -5%;
+        font-size: 1.625em;
+        white-space: wrap;
+        padding: 0 0 4px 6%;
+        text-align: start;
+    }
+
+    .headft h1 span {
+        letter-spacing: 0;
+    }
+}
+
+@media (min-width :325px) and (max-width :424.98px) {
+
+    .booking {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px 20px 60px;
+        margin: 0;
+    }
+
+    .bookingleft {
+        width: 100%;
+    }
+
+    .bookingcontent {
+        margin: 0;
+        padding: 0 0 5%;
+    }
+
+    .bookingcontent h1 {
+        width: 100%;
+        font-size: 1.6em;
+    }
+
+    .bookingcontent p:nth-child(3) {
+        width: 100%;
+        font-size: 16px;
+        padding: 2% 0 4%;
+        line-height: 28px;
+    }
+
+    .bookingcontent button {
+        font-size: 13px;
+        padding: 12px 42px;
+    }
+
+    .bookimg {
+        padding: 0;
+    }
+
+    .bookimg img {
+        width: 100%;
+    }
+
+    .prize {
+        width: 150px;
+        padding: 20px;
+        left: 0;
+        bottom: -8%;
+    }
+
+    .prize h4 {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .prize h1 {
+        font-size: 44px;
+        margin: 0;
+    }
+
+    .prize p {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .registered {
+        width: 150px;
+        padding: 20px;
+        left: 48%;
+        bottom: -8%;
+    }
+
+    .registered h4 {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .registered h1 {
+        font-size: 44px;
+        margin: 0;
+    }
+
+    .registered p {
+        font-size: 16px;
+        margin: 0;
+    }
+}
+
+@media (min-width :425px) and (max-width: 575.98px) {
+
+    .booking {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px 20px;
+        margin: 0;
+    }
+
+    .bookingleft {
+        width: 100%;
+    }
+
+    .bookingcontent {
+        margin: 0;
+        padding: 0 0 5%;
+    }
+
+    .bookingcontent h1 {
+        width: 100%;
+        font-size: 1.6em;
+    }
+
+    .bookingcontent p:nth-child(3) {
+        width: 100%;
+        font-size: 16px;
+        padding: 2% 0 4%;
+        line-height: 28px;
+    }
+
+    .bookingcontent button {
+        font-size: 13px;
+        padding: 12px 42px;
+    }
+
+    .bookimg {
+        padding: 0;
+    }
+
+    .bookimg img {
+        width: 100%;
+    }
+
+    .prize {
+        width: 160px;
+        padding: 20px;
+        left: 0;
+        bottom: 0;
+    }
+
+    .prize h4 {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .prize h1 {
+        font-size: 44px;
+    }
+
+    .prize p {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .registered {
+        width: 170px;
+        padding: 20px;
+        left: 56%;
+        bottom: 0;
+    }
+
+    .registered h4 {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .registered h1 {
+        font-size: 44px;
+    }
+
+    .registered p {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .contacthead .headft {
+        padding: 9% 0;
+    }
+
+    .headft h1 {
+        width: 79%;
+        margin: 0 0 0 -3%;
+        font-size: 1.625em;
+        white-space: wrap;
+        padding: 0 20px 4px 0;
+    }
+
+    .headft h1 span {
+        letter-spacing: 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .booking {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px 2%;
+        margin: 0 auto;
+    }
+
+    .bookingleft {
+        width: 100%;
+    }
+
+    .bookingcontent {
+        margin: 0;
+        padding: 0 0 5%;
+    }
+
+    .bookingcontent h1 {
+        width: 100%;
+        font-size: 2em;
+    }
+
+    .bookingcontent p:nth-child(3) {
+        width: 100%;
+        font-size: 16px;
+        padding: 2% 0 4%;
+        line-height: 28px;
+    }
+
+    .bookingcontent button {
+        font-size: 13px;
+        padding: 12px 42px;
+    }
+
+    .bookimg {
+        padding: 0;
+    }
+
+    .bookimg img {
+        width: 100%;
+    }
+
+    .prize {
+        width: 190px;
+        padding: 20px;
+        left: 0;
+        bottom: 0;
+    }
+
+    .prize h4 {
+        font-size: 18px;
+    }
+
+    .prize h1 {
+        font-size: 51px;
+    }
+
+    .registered {
+        width: 200px;
+        padding: 20px;
+        left: 45%;
+        bottom: 0;
+    }
+
+    .registered h4 {
+        font-size: 18px;
+    }
+
+    .registered h1 {
+        font-size: 51px;
+    }
+
+    .registered p {
+        margin: 0;
+    }
+
+    .contacthead .headft {
+        padding: 9% 0;
+    }
+
+    .headft h1 {
+        width: 81%;
+        margin: 0 0 0 -14%;
+        padding: 0 25px 4px 0;
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    .headbg h2 {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .booking {
+        padding: 80px 0;
+    }
+
+    .bookingleft {
+        width: fit-content;
+    }
+
+    .bookingcontent {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .bookingcontent h1 {
+        width: 300px;
+        font-size: 38px;
+        line-height: normal;
+    }
+
+    .bookingcontent p:nth-child(3) {
+        font-size: 17px;
+        width: 260px;
+        padding: 4% 0 7%;
+        line-height: 28px;
+    }
+
+    .bookingcontent button {
+        padding: 14px 46px;
+    }
+
+    .bookimg {
+        justify-content: end;
+    }
+
+    .bookimg img {
+        width: 70%;
+    }
+
+    .prize {
+        width: 160px;
+        padding: 20px;
+        left: 10%;
+        bottom: -5px;
+    }
+
+    .prize h4 {
+        font-size: 18px;
+    }
+
+    .prize h1 {
+        font-size: 51px;
+    }
+
+    .registered {
+        width: 160px;
+        padding: 20px;
+        left: 52%;
+        bottom: -5px;
+    }
+
+    .registered h4 {
+        font-size: 18px;
+    }
+
+    .registered h1 {
+        font-size: 51px;
+    }
+
+    .registered p {
+        margin: 0;
+    }
+
+    .headbg h2 {
+        font-size: 10em;
+        letter-spacing: -9px;
+        padding: 0 4px 0 0;
+    }
+
+    .headbg h2:nth-child(1) {
+        right: 60.5%;
+        letter-spacing: -9.5px;
+    }
+
+    .headbg h2:nth-child(2) {
+        left: 38%;
+        letter-spacing: -7.5px;
+    }
+
+    .contacthead .headft {
+        padding: 3.5% 0;
+    }
+
+    .headft h1 {
+        width: 79%;
+        margin: 0 0 0 -18%;
+        padding: 0 40px 4px 0;
+        font-size: 2.4em;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .bookingcontent {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .bookingcontent h1 {
+        font-size: 46px;
+    }
+
+    .bookingcontent p:nth-child(3) {
+        font-size: 17px;
+        width: 400px;
+        padding: 4% 0 7%;
+        line-height: 28px;
+    }
+
+    .bookingcontent button {
+        padding: 14px 46px;
+    }
+
+    .bookimg {
+        justify-content: end;
+    }
+
+    .prize {
+        width: 220px;
+        padding: 20px;
+        left: -10%;
+        bottom: -5px;
+    }
+
+    .prize h4 {
+        font-size: 18px;
+
+    }
+
+    .prize h1 {
+        font-size: 56px;
+    }
+
+    .registered {
+        width: 220px;
+        padding: 20px 20px 30px;
+        left: 40%;
+        bottom: -5px;
+    }
+
+    .registered h4 {
+        font-size: 18px;
+
+    }
+
+    .registered h1 {
+        font-size: 56px;
+    }
+
+    .headbg h2 {
+        font-size: 13.1em;
+        letter-spacing: -10px;
+    }
+
+    .headbg h2:nth-child(1) {
+        right: 59.5%;
+        letter-spacing: -10px;
+    }
+
+    .headbg h2:nth-child(2) {
+        left: 39%;
+    }
+
+    .headft h1 {
+        width: 81%;
+        font-size: 2.8em;
+        padding: 0 45px 4px 0;
+    }
+
+    .headft h1 span {
+        letter-spacing: -.1px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .headbg h2 {
+        font-size: 17.5em;
+        /* color: red; */
+    }
+
+    .headbg h2:nth-child(1) {
+        right: 61%;
+    }
+
+    .headbg h2:nth-child(2) {
+        left: 39%;
+    }
+}
+
+@media (min-width: 2560px) {
+    .headbg h2 {
+        font-size: 32em;
+        letter-spacing: -21px;
+    }
+
+    .headbg h2:nth-child(1) {
+        right: 59.8%;
+        letter-spacing: -22px;
+    }
+
+    .headbg h2:nth-child(2) {
+        left: 38.6%;
+        letter-spacing: -22px;
+    }
+
+    .contacthead .headft {
+        padding: 140px 0 !important;
+    }
+
+    .headft h1 {
+        width: 77%;
+        padding-right: 35px;
+    }
+}

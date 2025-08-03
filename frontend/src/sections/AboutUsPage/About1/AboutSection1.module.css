@@ -1,0 +1,223 @@
+.abtsection1{
+    padding: 100px 0;
+}
+
+.abtsection1 .s1box{
+    display: flex;
+    /* justify-content: space-between;  */
+    padding: 0;
+    /* gap: 10px; */
+}
+
+.s1box .s1left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.s1left p:nth-child(1){
+    color: #1E1E1E;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    line-height: 18px;
+}
+.s1left h1{
+    color: #1E1E1E;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 3.6em;
+    line-height: 96%;
+    letter-spacing: -.8px;
+}
+.s1left h1 span{
+    margin: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+}
+.s1left p:nth-child(3){
+    width: 420px;
+    color: #737373;
+    font-size: 18px;
+    margin: 0;
+    padding: 6% 0;
+    line-height: 30px;
+}
+
+.s1box .s1rght{
+    margin: 0 0 11% 2%;
+}
+
+.s1rght .s1imges{
+    position: relative;
+}
+
+.s1imges .bgimg{
+    display: flex;
+    justify-content: end;
+}
+.bgimg img{
+    width: 78%;
+}
+
+.s1imges>img{
+    width: 72%;
+    position: absolute;
+    top: 41%;
+    left:-10%;
+}
+
+
+@media (max-width :324.98px){
+
+}
+
+@media (min-width :325px) and (max-width :424.98px){
+
+}
+
+@media (max-width: 575.98px) {
+    .abtsection1{
+        padding: 54px 0;
+    }
+    .abtsection1 .s1box{
+        flex-direction: column;
+        padding : 0 12px;
+        overflow: hidden;
+    }
+    .s1left h1{
+        font-size: 1.65em;
+    }
+    .s1left p:nth-child(1){
+        font-weight: 700;
+        font-size: 13px;
+    }
+    .s1left p:nth-child(3){
+        width: 100%;
+        font-size: 16px;
+        padding: 4% 0 18px;
+        line-height: 26px;
+    }
+
+    .s1box .s1rght{
+        margin: 0 0 7%;
+    }
+
+    .bgimg img{
+        width: 55%;
+    }
+    .s1imges>img{
+        width: 53%;
+        top: 24%;
+        left: 4px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .abtsection1{
+        padding: 60px 0;
+    }
+    .abtsection1 .s1box{
+        flex-direction: column;
+    }
+    .s1left h1{
+        font-size: 2em;
+    }
+    .s1left p:nth-child(1){
+        font-weight: 700;
+        font-size: 13px;
+    }
+    .s1left p:nth-child(3){
+        width: 100%;
+        font-size: 16px;
+        padding: 4% 0;
+        line-height: 26px;
+    }
+
+    .s1box .s1rght{
+        margin: 0 2% 7%;
+    }
+
+    .bgimg img{
+        width: 54%;
+    }
+    .s1imges>img{
+        width: 54%;
+        top: 20%;
+        left: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .abtsection1{
+        padding: 80px 0;
+    }
+
+    .s1left h1{
+        font-size: 2.4em;
+    }
+    .s1left p:nth-child(1){
+        font-weight: 700;
+    }
+    .s1left p:nth-child(3){
+        width: 340px;
+        font-size: 17px;
+        padding: 4% 0;
+        line-height: 26px;
+    }
+
+    .bgimg img{
+        width: 69%;
+    }
+    .s1imges>img{
+        width: 61%;
+        top: 47%;
+        left: 6%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .abtsection1{
+        padding: 90px 0;
+    }
+
+    .s1left h1{
+        font-size: 2.9em;
+    }
+    .s1left p:nth-child(3){
+        font-size: 17px;
+        padding: 4% 0;
+    }
+
+    .bgimg img{
+        width: 65%;
+    }
+    .s1imges>img{
+        width: 61%;
+        top: 45%;
+        left: 10%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .abtsection1{
+        padding: 120px 0;
+    }
+
+    .s1left h1{
+        width: 60%;
+    }
+    .s1left p:nth-child(3){
+        width: 65%;
+        padding: 4% 0 ;
+    }
+
+    .bgimg img{
+        width: 100%;
+    }
+    .s1imges>img{
+        width: 95%;
+        left: -35%;
+    }
+}

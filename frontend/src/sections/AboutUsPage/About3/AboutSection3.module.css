@@ -1,0 +1,404 @@
+.abtsection3 {
+    padding: 100px 0;
+    display: flex;
+    overflow: hidden;
+    background: linear-gradient(to bottom, white 90%, #f7f8f9 90%);
+}
+
+.abtsection3 .s3left {
+    width: 66.66%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 95px;
+}
+
+.s3left .ltop {
+    margin: 80px 0 80px 12%;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.ltop .ltup {
+    padding: 0;
+}
+
+.ltup p {
+    color: #1e1e1e;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 2%;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+}
+
+.ltup h1 {
+    width: 70%;
+    color: #1e1e1e;
+    font-size: 3.6em;
+    font-weight: 600;
+    line-height: 95%;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.ltop .ltbtm {
+    display: flex;
+    justify-content: end;
+}
+
+.ltbtm p {
+    width: 48%;
+    color: #737373;
+    font-size: 18px;
+    margin: 0 10% 0 0;
+}
+
+.s3left .lbtm {
+    display: flex;
+    height: fit-content;
+}
+
+.lbtm .lblft {
+    width: 106%;
+    overflow: hidden;
+}
+
+.lblft img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lbrgt {
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    padding: 7.1% 5.7%;
+    background-color: #212121;
+}
+
+.lbrt,
+.lbrb {
+    display: flex;
+    flex-direction: column;
+}
+
+.lbrt h5,
+.lbrb h5 {
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 0 12px;
+}
+
+.lbrt p,
+.lbrb p {
+    font-size: 17px;
+    color: #CBCBCB;
+    margin: 0;
+    letter-spacing: .3px;
+}
+
+
+.abtsection3 .s3rght {
+    width: 33.3333%;
+    overflow: hidden;
+}
+
+.s3rght img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+@media (max-width: 575.98px) {
+    .abtsection3{
+        padding: 54px 0;
+        flex-direction: column;
+    }
+    
+    .abtsection3 .s3left {
+        width: 100%;
+        row-gap: 0;
+    }
+
+    .s3left .ltop {
+        margin: 0 18px 60px;
+        gap: 20px;
+    }
+
+    .ltup p{
+        font-size: 13px;
+        margin: 0 0 4px;
+    }
+    .ltup h1 {
+        width: 98%;
+        font-size: 1.65em;  
+        letter-spacing: -.2px;
+        line-height: 31px;
+        margin: 0;
+    }
+
+    .ltbtm p {
+        font-size: 16px;
+        width: 100%;
+        margin: 0 0;
+    }
+
+    .s3left .lbtm{
+        flex-direction: column;
+    }
+    .lbtm .lblft{
+        width: 100%;
+        height: 250px;
+    }
+    .lbrgt {
+        width: 100%;
+        padding: 11% 6%;
+        gap: 20px;
+    }
+
+    .lbrt h5,
+    .lbrb h5 {
+        font-size: 21px;
+        margin: 0 0 8px;
+    }
+
+    .lbrt p,
+    .lbrb p{
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 22px;
+    }
+
+    .abtsection3 .s3rght {
+        width: 100%;
+        height: 270px;
+        
+    }
+    .s3rght img {
+        object-position: top;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .abtsection3{
+        padding: 60px 0;
+        flex-direction: column;
+    }
+    
+    .abtsection3 .s3left {
+        width: 100%;
+        row-gap: 0;
+    }
+
+    .s3left .ltop {
+        margin: 0 30px 60px;
+        gap: 20px;
+    }
+
+    .ltup p{
+        font-size: 13px;
+        margin: 0 0 7px;
+    }
+    .ltup h1 {
+        width: 98%;
+        font-size: 2em;
+        letter-spacing: -.6px;
+        line-height: 35px;
+        margin: 0;
+    }
+
+    .ltbtm p {
+        font-size: 16px;
+        width: 100%;
+        margin: 0 0;
+    }
+
+    .s3left .lbtm{
+        flex-direction: column;
+    }
+    .lbtm .lblft{
+        width: 100%;
+        height: 250px;
+    }
+    .lbrgt {
+        width: 100%;
+        padding: 11% 6%;
+        gap: 25px;
+    }
+
+    .lbrt h5,
+    .lbrb h5 {
+        font-size: 21px;
+        margin: 0 0 8px;
+    }
+
+    .lbrt p,
+    .lbrb p{
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 22px;
+    }
+
+    .abtsection3 .s3rght {
+        width: 100%;
+        height: 270px;
+        
+    }
+    .s3rght img {
+        object-position: top;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .abtsection3 {
+        padding: 80px 0;
+    }
+
+    .abtsection3 .s3left {
+        row-gap: 0;
+    }
+
+    .s3left .ltop {
+        margin: 80px 30px;
+        gap: 25px;
+    }
+
+
+    .ltup h1 {
+        width: 98%;
+        font-size: 2.4em;
+        letter-spacing: -.6px;
+        line-height: 4  0px;
+    }
+
+    .ltbtm p {
+        font-size: 17px;
+        width: 100%;
+        margin: 0 0;
+    }
+
+    .lbrgt {
+        padding: 40px 30px;
+    }
+
+    .lbrt h5,
+    .lbrb h5 {
+        font-size: 22px;
+    }
+
+    .lbrt p,
+    .lbrb p{
+        letter-spacing: 0;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .abtsection3 {
+        padding: 90px 0;
+    }
+
+    .abtsection3 .s3left {
+        row-gap: 0;
+    }
+
+    .s3left .ltop {
+        margin: 80px 0 90px 4%;
+        gap: 25px;
+    }
+
+
+    .ltup h1 {
+        width: 100%;
+        font-size: 2.9em;
+        letter-spacing: -.6px;
+    }
+
+    .ltbtm p {
+        font-size: 17px;
+        width: 100%;
+        margin: 0 5% 0 0;
+    }
+
+    .lbrgt {
+        padding: 40px 30px;
+    }
+
+    .lbrt h5,
+    .lbrb h5 {
+        font-size: 22px;
+    }
+
+    .lbrt p,
+    .lbrb p{
+        letter-spacing: 0;
+    }
+}
+
+@media (min-width: 1400px) {
+    .abtsection3 {
+        padding: 120px 0;
+    }
+
+    .abtsection3 .s3left {
+        row-gap: 105px;
+    }
+
+    .ltbtm p {
+        line-height: 28.8px;
+    }
+
+    .lbrgt {
+        gap: 45px;
+        padding: 7.4% 6%;
+    }
+}
+
+@media (min-width: 2560px) {
+    .abtsection3 {
+        padding: 120px 0;
+    }
+
+    .abtsection3 .s3left {
+        width: 67%;
+        row-gap: 105px;
+    }
+
+    .s3left .ltop {
+        margin: 80px 0 80px 30%;
+    }
+
+    .lbtm .lblft {
+        width: 107%;
+    }
+
+    .lbrgt {
+        width: 93%;
+        justify-content: center;
+        gap: 45px;
+        padding: 7.5% 6%;
+    }
+
+    .lbrt p,
+    .lbrb p {
+        line-height: 30px;
+    }
+
+    .abtsection3 .s3rght {
+        width: 33%;
+    }
+
+    .s3rght img {
+        height: 1126px;
+    }
+}

@@ -1,0 +1,62 @@
+.manageRegister {
+    padding: 20px;
+    background-color: #f7f8f9;
+}
+
+.dataTable {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dataTable h1 {
+    background-color: white;
+    margin: 0;
+    padding: 10px;
+    font-family: 14px;
+    text-transform: capitalize;
+}
+
+.dataTable p {
+    margin-bottom: .3rem;
+}
+
+.viewHead {
+    text-transform: capitalize;
+}
+
+.viewHead {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.detailContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 16px;
+    color: #444;
+    padding: 10px 0;
+}
+
+.detailRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 6px;
+}
+
+.detailRow strong {
+    font-weight: 600;
+    margin-right: 10px;
+    color: #222;
+}
+
+
+.bold {
+    text-transform: capitalize;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 18px;
+}

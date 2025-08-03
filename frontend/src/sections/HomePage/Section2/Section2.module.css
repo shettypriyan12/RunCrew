@@ -1,0 +1,368 @@
+.section2{
+    padding: 100px 0 200px;
+    overflow: hidden;
+}
+
+.services{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Left side */
+.sleft{
+    position: relative;
+    transition: all .3s ease;
+}
+.sleft .bgimg{
+    width: fit-content;
+}
+
+.bgimg img{
+    width: 86%;
+    height: 585px;
+    object-fit: cover;
+    padding-left: 8px;
+}
+
+.sleft .info{
+    position: absolute;
+    left: 30%;
+    top: 48%;
+    background-color: #1e1e1e;
+    color: white !important;
+    padding: 50px 48px;
+}
+
+
+.info .icon svg{
+    font-size: 52px;
+}
+.info:hover h1{
+    transform: translateX(-1px);
+}
+
+/* .info .txt{} */
+.txt p{
+    margin: 18% 0 0;
+    width: 320px;
+    height: 140.2px;
+    color: rgba(255, 255, 255, 0.801);
+    font-size: 17px;
+    line-height: 1.65em;
+    word-wrap: break-word;
+    align-content: center;
+}
+
+.info .arrow{
+    overflow: hidden;
+}
+.arrow h1{
+    width: fit-content;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0; 
+    padding: 0;
+    vertical-align: middle;
+    transform: translateX(-24px);
+    transition: all .3s ease-in-out ;
+}
+
+
+
+/* Right side */
+.sright{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+/* .srtop{} */
+.srtop p{
+    font-size: 18px;
+    color: #737373;
+    line-height: 1.62em;
+}
+
+/* .srbtm{} */
+.srbtm .tab{
+    cursor: pointer;
+}
+
+.tab h2{
+    color: #919191;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.active h2{
+    color: #1E1E1E ;
+}
+
+
+@media (max-width: 575.98px) {
+    .section2{
+        padding: 60px 0;
+    }
+    .services{
+        padding: 0 8px;
+        flex-direction: column;
+    }
+    .sleft{
+        margin: 0 0 8%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: left;
+    }
+    .sleft .bgimg{
+        width: 100%;
+    }
+    .bgimg img{
+        width: 100%;
+        height: 250px;
+        object-position: top;
+        padding: 0;
+    }
+
+    .sleft .info{
+        left: 0;
+        bottom: 0;
+        position: relative;
+        width: 100%;
+        padding: 2em;
+        height: fit-content;
+    }
+    .info .icon svg{
+        font-size: 43px;
+    }
+    .info .txt p {
+        font-size: 16px;
+        margin: 10% 0 0;
+        line-height: normal;
+        width: 100%;
+        height: auto;
+    }
+
+    .info .arrow{
+        margin :0;
+        padding: 8px 0 0;
+    }
+    .arrow h1{
+        font-size: 30px;
+        transform: translateX(-15px);
+    }
+
+    .sright{
+        width: 100%;
+    }
+
+    .srtop{
+        display: none;
+    }
+
+    .srbtm .tab h2{
+        font-size: 28px;
+        line-height: 1.3em;
+        letter-spacing: -0.5px;
+        margin: 8px 0;
+    }
+}
+
+@media (min-width:576px) and (max-width: 767.98px) {
+    .section2{
+        padding: 60px 0;
+    }
+    .services{
+        padding: 0 8px;
+        flex-direction: column;
+    }
+    .sleft{
+        margin: 0 0 8%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: left;
+    }
+    .sleft .bgimg{
+        width: 100%;
+    }
+    .bgimg img{
+        width: 100%;
+        height: 250px;
+        object-position: top;
+        padding: 0;
+    }
+
+    .sleft .info{
+        left: 0;
+        bottom: 0;
+        position: relative;
+        width: 100%;
+        padding: 2em;
+        height: fit-content;
+    }
+
+    .info .txt p {
+        margin: 10% 0 0;
+        line-height: normal;
+        width: 100%;
+        height: auto;
+    }
+
+    .info .arrow{
+        margin :0;
+        padding: 0;
+    }
+
+    .sright{
+        width: 100%;
+    }
+
+    .srtop{
+        display: none;
+    }
+
+    .srbtm .tab h2{
+        font-size: 31px;
+        line-height: 1.3em;
+        letter-spacing: -0.5px;
+        margin: 8px 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .section2{
+        padding: 80px 0 150px;
+    }
+    .services{
+        padding: 0;
+        /* justify-content: none; */
+        column-gap: 0px;
+    }
+    .bgimg img{
+        padding: 0 0 0 6px;
+        width: 76%;
+        height: 450px;
+    }
+
+    .sleft .info{
+        padding: 2.4em ;
+        top: 25.8%;
+        left: 24.4%;
+    }
+
+    .info .txt p{
+        width: 214px;
+        height: 100%;
+        line-height: 1.6em;
+        word-wrap: break-word;
+    }
+
+    .info .arrow{
+        margin :0;
+        padding: 4% 0 0;
+    }
+
+    .sright{
+        row-gap: 20px
+    }
+    .srtop p{
+        font-size: 17px;
+    }
+
+    .srbtm .tab h2{
+        font-size: 31px;
+        line-height: 1.3em;
+        letter-spacing: -0.5px;
+        margin: 8px 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .section2{
+        padding: 100px 0 150px;
+    }
+    .services{
+        padding: 0;
+        justify-content: left;
+        column-gap: 200px;
+    }
+    .bgimg img{
+        width: 353px;
+        height: 450px;
+        padding: 0;
+    }
+
+    .sleft .info{
+        padding: 47px 46px ;
+        top: 35%;
+    }
+
+    .info .txt p{
+        width: 307px;
+        line-height: 1.5em;
+    }
+
+    .sright{
+        width: 100%;
+        gap: 50px;
+    }
+    .srtop p{
+        font-size: 17px;
+    }
+
+    .srbtm .tab h2{
+        font-size: 34px;
+        line-height: 1.3em;
+        letter-spacing: -0.5px;
+        margin: 8px 0;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+}
+
+@media (min-width: 1400px) {
+    .bgimg img{
+        width: 100%;
+    }
+
+    .sleft .info{
+        padding: 63px 61px;
+    }
+
+    .info .txt p{
+        margin: 15% 0 0 ;
+        width: 380px;
+    }
+
+    .tab h2{
+        font-size: 48px;
+        margin: 15px 0 ;
+    }
+}   
+
+@media (min-width: 2560px){
+    .section2{
+        padding: 100px 0 30px;
+    }
+    .sleft{
+        height: 720px;
+    }
+    .sleft .info{
+        left: 32%;
+        top: 40%;
+    }
+
+    .sright{
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .srbtm{
+        margin: 0 0 7%;
+    }
+}

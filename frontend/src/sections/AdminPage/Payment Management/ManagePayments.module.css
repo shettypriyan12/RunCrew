@@ -1,0 +1,73 @@
+.managePayment {
+    padding: 20px;
+    background-color: #f7f8f9;
+}
+
+.dataTable {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dataTable h1 {
+    background-color: white;
+    margin: 0;
+    padding: 10px;
+}
+
+.dataTable p {
+    margin-bottom: .3rem;
+}
+
+.viewHead {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.detailContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 16px;
+    color: #444;
+    padding: 10px 0;
+}
+
+.detailRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 6px;
+    text-transform: capitalize;
+}
+
+.detailRow strong {
+    font-weight: 600;
+    margin-right: 10px;
+    color: #222;
+}
+
+.paid {
+    color: green;
+    font-weight: 600;
+}
+
+.notPaid {
+    color: red;
+    font-weight: 600;
+}
+
+
+.viewBody {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: "DM Sans", sans-serif;
+}
+
+.bold {
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 18px;
+}

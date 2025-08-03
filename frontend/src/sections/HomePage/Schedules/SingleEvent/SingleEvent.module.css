@@ -1,0 +1,750 @@
+.singleEvent {
+    margin: 0;
+    background-color: rgba(115, 115, 115, .1);
+}
+
+.singleEvent .innerBox {
+    padding: 100px 20px;
+}
+
+.innerBox .boxTop {
+    text-align: center;
+}
+
+.boxTop h1 {
+    color: #1E1E1E;
+    font-size: 54px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: -.5px;
+    padding: 0 0 12px;
+}
+
+.boxTop p{
+    color: #737373;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    letter-spacing: .2px;
+    gap: 4px;
+}
+
+.boxTop p svg {
+    font-size: 26px;
+    /* padding: 0 5px 0 0; */
+}
+
+.boxTop h2 {
+    font-size: 32px;
+    color: #1E1E1E;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.innerBox .midBox {
+    margin: 4% 0 3%;
+    padding: 0;
+}
+
+.midBox img {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.innerBox>p {
+    font-size: 18px;
+    color: #737373;
+    word-spacing: .5px;
+    line-height: 1.62em;
+    margin: 0 0 3%;
+}
+
+.clickies{
+    display: flex;
+    justify-content: space-between;
+}
+.innerBox .calendar {
+    position: relative;
+}
+
+.calendar button , .register{
+    position: relative;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    padding: 12px 22px 14px 26px;
+    background-color: #cccc00;
+    color: white !important;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+}
+
+.calendar button:hover , .register:hover{
+    background-color: #adad03;
+}
+
+
+.calendar button svg {
+    font-size: 16px;
+    transform: rotate(-180deg);
+    margin: 0 0 3px;
+    transition: all 0ms ease-in-out;
+}
+
+.calendar button.active svg {
+    transform: rotate(0);
+}
+
+.calendar .scheduler {
+    position: absolute;
+    top: 55px;
+    color: #1E1E1E;
+    background-color: rgb(255, 255, 250);
+    border: 1px solid rgba(115, 115, 115, 0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 4px 0;
+}
+
+.scheduler .linker {
+    margin: 0;
+    padding: 0 12px;
+}
+
+.linker p {
+    width: 180px;
+    height: fit-content;
+    padding: 7px;
+    margin: 0;
+}
+
+.linker p:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.innerBox .deets {
+    margin: 8% 0 0;
+    padding: 0;
+    display: flex;
+}
+
+.deets h3 {
+    margin: 0 0 28px;
+    font-weight: 600;
+}
+
+.deets h5 {
+    font-size: 19px;
+    font-weight: 600;
+    margin: 0 0 2px;
+}
+
+.deets p {
+    font-size: 17px;
+    color: #737373;
+    text-transform: capitalize;
+}
+
+.deets .left1 {
+    width: 100%;
+    display: flex;
+    gap: 80px;
+}
+
+.mail {
+    text-transform: lowercase !important;
+}
+
+.tags:hover {
+    color: #1E1E1E !important;
+    transition: all .3s ease-in;
+}
+
+.deets .rght1 {
+    width: 100%;
+    display: flex;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+}
+
+.address p {
+    color: #1E1E1E;
+    margin: 0 0 4px;
+}
+
+.address .google {
+    font-size: 17px;
+    color: #e2e202 !important;
+    letter-spacing: .6px;
+    margin: 18px 0 0;
+    font-weight: 600;
+}
+
+.address .google:hover {
+    color: #adad03 !important;
+}
+
+.innerBox .otherEvents {
+    margin: 40px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.otherEvents {
+    color: #1E1E1E !important;
+}
+
+.otherEvents .prev,
+.otherEvents .next {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.otherEvents .prev:hover,
+.otherEvents .next:hover {
+    color: #cccc00 !important;
+    transition: all .3s ease-in;
+}
+
+.otherEvents .prev svg,
+.otherEvents .next svg {
+    font-size: 32px;
+}
+
+@media (max-width :325px) {
+    
+    .singleEvent .innerBox {
+        padding: 40px 10px;
+    }
+
+    .boxTop h1 {
+        font-size: 26px;
+        margin: 0;
+        padding: 0 0 6px;
+        letter-spacing: .4px;
+    }
+
+    .boxTop p {
+        /* display: block; */
+        font-size: 13px;
+        margin: 0 0 12px;
+        flex-direction: column;
+    }
+    .boxTop p svg{
+        font-size: 18px;
+        padding: 0;
+    }
+
+    .boxTop h2 {
+        font-size: 20px;
+    }
+
+    .innerBox>p {
+        font-size: 16px;
+        margin: 0 0 16px;
+    }
+
+    .innerBox .midBox {
+        margin: 5% 0 4%;
+    }
+
+    .innerBox .deets {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .deets h3 {
+        margin: 0 0 20px;
+        font-size: 21px;
+    }
+
+    .deets h5 {
+        margin: 0 0 4px;
+        font-size: 17px;
+    }
+
+    .deets p {
+        margin: 0 0 20px;
+        font-size: 15px;
+    }
+
+    .deets .left1 {
+        flex-direction: column;
+        gap: 0;
+        justify-content: space-between;
+        padding: 30px 0 0;
+    }
+
+    .deets .rght1 {
+        padding: 15px 0 0;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .rght1 .rtop {
+        margin: 0 0 24px;
+    }
+
+    .address p {
+        margin: 0 0 6px;
+    }
+
+    .rght1 .rbtm .map {
+        width: 100%;
+    }
+
+    .otherEvents .prev,
+    .otherEvents .next {
+        font-size: 12px;
+        letter-spacing: 0;
+        display: flex;
+        align-items: center;
+        gap: 0px;
+    }
+    .otherEvents .prev svg,
+    .otherEvents .next svg {
+        font-size: 18px;
+    }
+}
+
+@media (min-width:375px) and (max-width :424.98px) {
+    
+    .singleEvent .innerBox {
+        padding: 40px 10px;
+    }
+
+    .boxTop h1 {
+        font-size: 26px;
+        margin: 0;
+        padding: 0 0 6px;
+        letter-spacing: .4px;
+    }
+
+    .boxTop p {
+        font-size: 13px;
+        margin: 0 0 12px;
+        align-items: start;
+        gap: 2px;
+    }
+    .boxTop p svg{
+        font-size: 22px;
+        padding: 0 3px 0 0 ;
+    }
+
+    .boxTop h2 {
+        font-size: 20px;
+    }
+
+    .innerBox>p {
+        font-size: 16px;
+        margin: 0 0 16px;
+    }
+
+    .innerBox .midBox {
+        margin: 5% 0 4%;
+    }
+
+    .innerBox .deets {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .deets h3 {
+        margin: 0 0 20px;
+        font-size: 21px;
+    }
+
+    .deets h5 {
+        margin: 0 0 4px;
+        font-size: 17px;
+    }
+
+    .deets p {
+        margin: 0 0 20px;
+        font-size: 15px;
+    }
+
+    .deets .left1 {
+        gap: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px 0 0;
+    }
+
+    .deets .rght1 {
+        padding: 15px 0 0;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .rght1 .rtop {
+        margin: 0 0 24px;
+    }
+
+    .address p {
+        margin: 0 0 6px;
+    }
+
+    .rght1 .rbtm .map {
+        width: 100%;
+    }
+
+    .otherEvents .prev,
+    .otherEvents .next {
+        font-size: 12px;
+        letter-spacing: 0;
+        display: flex;
+        align-items: center;
+        gap: 0px;
+    }
+    .otherEvents .prev svg,
+    .otherEvents .next svg {
+        font-size: 18px;
+    }
+}
+
+
+@media (min-width :425px) and (max-width: 575.98px) {
+    .singleEvent .innerBox {
+        padding: 40px 15px;
+    }
+
+    .boxTop h1 {
+        font-size: 26px;
+        margin: 0;
+        padding: 0 0 6px;
+        letter-spacing: .4px;
+    }
+
+    .boxTop p {
+        font-size: 13px;
+        margin: 0 0 12px;
+    }
+    .boxTop p svg{
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .boxTop h2 {
+        font-size: 20px;
+    }
+
+    .innerBox>p {
+        font-size: 16px;
+        margin: 0 0 16px;
+    }
+
+    .innerBox .midBox {
+        margin: 5% 0 4%;
+    }
+
+    .innerBox .deets {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .deets h3 {
+        margin: 0 0 20px;
+        font-size: 21px;
+    }
+
+    .deets h5 {
+        margin: 0 0 4px;
+        font-size: 17px;
+    }
+
+    .deets p {
+        margin: 0 0 20px;
+        font-size: 15px;
+    }
+
+    .deets .left1 {
+        gap: 0;
+        justify-content: space-between;
+        padding: 50px 0 0;
+    }
+
+    .deets .rght1 {
+        padding: 50px 0 0;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .rght1 .rtop {
+        margin: 0 0 20px;
+    }
+
+    .address p {
+        margin: 0 0 6px;
+    }
+
+    .rght1 .rbtm .map {
+        width: 100%;
+    }
+
+    .otherEvents .prev,
+    .otherEvents .next {
+        font-size: 12px;
+        letter-spacing: 0;
+        display: flex;
+        align-items: center;
+        gap: 0px;
+    }
+    .otherEvents .prev svg,
+    .otherEvents .next svg {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .singleEvent .innerBox {
+        padding: 60px 0;
+    }
+
+    .boxTop h1 {
+        font-size: 38px;
+        margin: 0;
+    }
+
+    .boxTop p {
+        font-size: 15px;
+        margin: 0 0 12px;
+    }
+
+    .boxTop h2 {
+        font-size: 23.8px;
+    }
+
+    .innerBox>p {
+        font-size: 17px;
+        margin: 0 0 17px;
+    }
+
+    .innerBox .midBox {
+        margin: 5% 0 4%;
+    }
+
+    .innerBox .deets {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .deets h3 {
+        margin: 0 0 20px;
+        font-size: 21px;
+    }
+
+    .deets h5 {
+        margin: 0 0 4px;
+        font-size: 17px;
+    }
+
+    .deets p {
+        margin: 0 0 20px;
+        font-size: 16px;
+    }
+
+    .deets .left1 {
+        gap: 24%;
+        padding: 50px 0 0;
+    }
+
+    .deets .rght1 {
+        padding: 50px 0 0;
+        justify-content: space-between;
+    }
+
+    .address p {
+        margin: 0 0 6px;
+    }
+
+    .rght1 .rbtm .map {
+        width: 360px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .singleEvent .innerBox {
+        padding: 80px 0;
+    }
+
+    .boxTop h1 {
+        font-size: 38px;
+        margin: 0;
+    }
+
+    .boxTop p {
+        font-size: 15px;
+        margin: 0 0 12px;
+    }
+
+    .boxTop h2 {
+        font-size: 23.8px;
+    }
+
+    .innerBox>p {
+        font-size: 17px;
+        margin: 0 0 17px;
+    }
+
+    .innerBox .midBox {
+        margin: 5% 0 4%;
+    }
+
+    .innerBox .deets {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .deets h3 {
+        margin: 0 0 20px;
+        font-size: 21px;
+    }
+
+    .deets h5 {
+        margin: 0 0 4px;
+        font-size: 17px;
+    }
+
+    .deets p {
+        margin: 0 0 20px;
+        font-size: 16px;
+    }
+
+    .deets .left1 {
+        gap: 24%;
+        padding: 50px 0 0;
+    }
+
+    .deets .rght1 {
+        padding: 50px 0 0;
+        justify-content: space-between;
+    }
+
+    .address p {
+        margin: 0 0 6px;
+    }
+
+    .rght1 .rbtm .map {
+        width: 360px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .singleEvent .innerBox {
+        padding: 90px 0;
+    }
+
+    .boxTop h1 {
+        font-size: 46px;
+    }
+
+    .boxTop p {
+        font-size: 15px;
+    }
+
+    .boxTop h2 {
+        font-size: 27px;
+    }
+
+    .innerBox>p {
+        font-size: 17px;
+        margin: 0 0 2%;
+    }
+
+    .deets h3 {
+        margin: 0 0 20px;
+        font-size: 21px;
+    }
+
+    .deets h5 {
+        margin: 0 0 4px;
+        font-size: 17px;
+    }
+
+    .deets p {
+        margin: 0 0 20px;
+        font-size: 16px;
+    }
+
+    .deets .left1 {
+        gap: 60px;
+    }
+
+    .deets .rght1 {
+        justify-content: space-between;
+    }
+
+    .address p {
+        margin: 0 0 6px;
+    }
+
+    .rght1 .rbtm .map {
+        width: 255px;
+        /* overflow: hidden; */
+    }
+}
+
+@media (min-width: 1400px) {
+    .singleEvent .innerBox {
+        padding: 100px 14px;
+    }
+
+    .boxTop h1 {
+        font-size: 57px;
+    }
+
+    .boxTop h2 {
+        font-size: 35px;
+    }
+
+    .innerBox .midBox {
+        width: 1290px;
+        height: 911px;
+        overflow: hidden;
+    }
+
+    .innerBox .deets {
+        margin: 6% 0 0;
+    }
+
+    .deets h5 {
+        margin: 0 0 4px;
+    }
+
+    .deets p {
+        margin: 0 0 20px;
+    }
+
+    .deets .left1 {
+        gap: 130px;
+    }
+
+    .deets .rght1 {
+        gap: 45px;
+    }
+
+    .address p {
+        margin: 0 0 6px;
+    }
+
+}
+
+@media (min-width: 2560px) {
+    .deets .rght1 {
+        justify-content: space-between;
+    }
+}

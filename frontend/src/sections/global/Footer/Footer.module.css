@@ -1,0 +1,543 @@
+.footer {
+    background-color: #212121;
+    color: white;
+}
+
+.footerbox {
+    padding: 80px 0 0;
+}
+
+.ftop {
+    display: flex;
+    padding: 0 30px 30px;
+    column-gap: 90px;
+}
+
+.ftop h6 {
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 0 30px;
+}
+
+.ftop .f1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.6% 0 0;
+}
+
+.f1 p {
+    font-size: 17px;
+    color: #CBCBCB;
+    line-height: 1.6em;
+    width: 280px;
+}
+
+
+.ftop .f2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.f2 .addf2 {
+    color: #CBCBCB;
+    font-size: 17px;
+}
+
+.f2 .addf2 p {
+    line-height: 1.7em;
+}
+
+.f2 .mail {
+    font-size: 17px;
+}
+
+.f2 .mail p {
+    width: fit-content;
+    color: white;
+    position: relative;
+    margin: 0 0 24px;
+}
+
+.mail p::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: .5px;
+    background-color: white;
+    transition: all 1s ease-in;
+}
+
+.f2 .mail p:hover {
+    color: #CBCBCB;
+}
+
+.f2 .mail p:hover::after {
+    width: 0%;
+    transition: all .3s ease-in-out;
+}
+
+.f2 .phone h5 {
+    font-size: 21px;
+    text-shadow: 0px 0px 1px white;
+    padding: 10px 0 8px;
+}
+
+
+.ftop .f3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.f3 a p {
+    width: fit-content;
+    font-size: 17px;
+    color: white;
+    position: relative;
+    margin: 0 0 14px;
+    transition: all .3s ease-in-out;
+}
+
+.f3 a p::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: .5px;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.f3 a:hover p {
+    transform: translateX(10px);
+}
+
+.f3 a:hover p::after {
+    width: 100%;
+}
+
+
+
+.ftop .f4 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 10%;
+}
+
+.f4 .socials {
+    display: flex;
+    flex-direction: column;
+    color: #CBCBCB;
+}
+
+.socials a {
+    font-size: 18px;
+    margin: 0 0 16px;
+    align-content: center;
+}
+
+.socials a span {
+    text-align: end;
+}
+
+.socials a:nth-child(1) svg {
+    font-size: 16px;
+}
+
+.socials a:nth-child(2) svg {
+    font-size: 16px;
+}
+
+.socials a:nth-child(3) svg {
+    font-size: 20px;
+}
+
+.socials a:nth-child(4) svg {
+    font-size: 20px;
+}
+
+.socials a svg {
+    margin: 0 4px 0 0;
+    background-color: transparent;
+}
+
+.socials a:hover svg,
+.socials a:hover span {
+    color: white;
+    transition: all .3s ease-in;
+}
+
+.rights {
+    font-size: 16px;
+    margin: 20px 0 0 20px;
+    padding: 32px 0;
+    border-top: .5px solid rgba(255, 255, 255, 0.5);
+    color: #CBCBCB;
+}
+
+
+@media (max-width :324.98px) {
+    .footerbox {
+        padding: 30px 0 0;
+    }
+
+    .ftop {
+        flex-direction: column;
+        padding: 0 16px;
+    }
+
+    .ftop .f1,
+    .ftop .f2,
+    .ftop .f3,
+    .ftop .f4 {
+        margin: 0 0 20px;
+    }
+
+    .ftop h6 {
+        font-size: 20px;
+        margin: 0 0 16px;
+    }
+
+    .f1 p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .f2 .addf2 p {
+        font-size: 16px;
+    }
+
+    .f2 .mail p {
+        margin: 0 0 12px;
+    }
+
+    .f2 .phone h5 {
+        font-size: 20px;
+    }
+
+    .f3 a p {
+        font-size: 16px;
+    }
+
+    .f4 .socials a {
+        margin: 0 0 10px;
+    }
+
+    .f4 .socials a span {
+        font-size: 16px;
+    }
+
+    .socials a:nth-child(1) svg {
+        font-size: 16px;
+    }
+
+    .socials a:nth-child(2) svg {
+        font-size: 16px;
+    }
+
+    .socials a:nth-child(3) svg {
+        font-size: 20px;
+    }
+
+    .socials a:nth-child(4) svg {
+        font-size: 20px;
+    }
+
+    .rights{
+        margin: 10px 21px 0;
+        padding: 16px 5px;
+    }
+}
+
+@media (min-width :325px) and (max-width :424.98px) {
+    .footerbox {
+        padding: 30px 0 0;
+    }
+
+    .ftop {
+        flex-direction: column;
+        padding: 0 18px;
+    }
+
+    .ftop .f1,
+    .ftop .f2,
+    .ftop .f3,
+    .ftop .f4 {
+        margin: 0 0 20px;
+    }
+
+    .ftop h6 {
+        font-size: 20px;
+        margin: 0 0 16px;
+    }
+
+    .f1 p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .f2 .addf2 p {
+        font-size: 16px;
+    }
+
+    .f2 .mail p {
+        margin: 0 0 12px;
+    }
+
+    .f2 .phone h5 {
+        font-size: 20px;
+    }
+
+    .f3 a p {
+        font-size: 16px;
+    }
+
+    .f4 .socials a {
+        margin: 0 0 10px;
+    }
+
+    .f4 .socials a span {
+        font-size: 16px;
+    }
+
+    .socials a:nth-child(1) svg {
+        font-size: 16px;
+    }
+
+    .socials a:nth-child(2) svg {
+        font-size: 16px;
+    }
+
+    .socials a:nth-child(3) svg {
+        font-size: 20px;
+    }
+
+    .socials a:nth-child(4) svg {
+        font-size: 20px;
+    }
+
+    .rights{
+        margin: 10px 21px 0;
+        padding: 18px 5px;
+    }
+}
+
+@media (min-width :425px) and (max-width: 575.98px) {
+    .footerbox {
+        padding: 50px 0 0;
+    }
+
+    .ftop {
+        flex-direction: column;
+        padding: 0 21px;
+    }
+
+    .ftop .f1,
+    .ftop .f2,
+    .ftop .f3,
+    .ftop .f4 {
+        margin: 0 0 20px;
+    }
+
+    .ftop h6 {
+        font-size: 20px;
+        margin: 0 0 16px;
+    }
+
+    .f1 p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .f2 .addf2 p {
+        font-size: 16px;
+    }
+
+    .f2 .mail p {
+        margin: 0 0 12px;
+    }
+
+    .f2 .phone h5 {
+        font-size: 20px;
+    }
+
+    .f3 a p {
+        font-size: 16px;
+    }
+
+    .f4 .socials a {
+        margin: 0 0 10px;
+    }
+
+    .f4 .socials a span {
+        font-size: 16px;
+    }
+
+    .socials a:nth-child(1) svg {
+        font-size: 16px;
+    }
+
+    .socials a:nth-child(2) svg {
+        font-size: 16px;
+    }
+
+    .socials a:nth-child(3) svg {
+        font-size: 20px;
+    }
+
+    .socials a:nth-child(4) svg {
+        font-size: 20px;
+    }
+
+    .rights{
+        margin: 10px 21px 0;
+        padding: 21px 5px;
+    }
+}
+
+@media (min-width :576px) and (max-width: 767.98px) {
+    .footerbox {
+        padding: 50px 0 0;
+    }
+
+    .ftop {
+        flex-direction: column;
+        padding: 0 30px;
+    }
+
+    .ftop .f1,
+    .ftop .f2,
+    .ftop .f3,
+    .ftop .f4 {
+        margin: 0 0 20px;
+    }
+
+    .ftop h6 {
+        font-size: 20px;
+        margin: 0 0 16px;
+    }
+
+    .f1 p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .f2 .addf2 p {
+        font-size: 16px;
+    }
+
+    .f2 .mail p {
+        margin: 0 0 12px;
+    }
+
+    .f2 .phone h5 {
+        font-size: 20px;
+    }
+
+    .f3 a p {
+        font-size: 16px;
+    }
+
+    .f4 .socials a {
+        margin: 0 0 10px;
+    }
+
+    .f4 .socials a span {
+        font-size: 16px;
+    }
+
+    .socials a:nth-child(1) svg {
+        font-size: 16px;
+    }
+
+    .socials a:nth-child(2) svg {
+        font-size: 16px;
+    }
+
+    .socials a:nth-child(3) svg {
+        font-size: 20px;
+    }
+
+    .socials a:nth-child(4) svg {
+        font-size: 20px;
+    }
+
+    .rights{
+        margin: 10px 25px 0;
+        padding: 25px 5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .footerbox {
+        padding: 60px 0 0;
+    }
+
+    .ftop {
+        padding: 10px 30px;
+        column-gap: 40px;
+    }
+
+    .ftop h6 {
+        font-size: 20px;
+    }
+
+    .ftop .f1 {
+        margin: 0;
+    }
+
+    .f1 p {
+        width: 240px;
+    }
+
+    .f2 .addf2 p {
+        width: 125px;
+    }
+
+    .f2 .phone h5 {
+        font-size: 20px;
+    }
+
+    .ftop .f4 {
+        margin: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .footerbox {
+        padding: 75px 0 0;
+    }
+
+    .ftop .f4 {
+        margin: 0;
+    }
+
+    .rights {
+        margin: 20px 20px 0;
+    }
+}
+
+@media (min-width: 1400px) {
+    .footerbox {
+        padding: 100px 0 0;
+    }
+
+    .ftop .f1 {
+        margin: 0 3% 0 0;
+    }
+
+    .f1 p {
+        width: 321px;
+    }
+
+    .ftop .f3 {
+        margin: 0 0 0 3%;
+    }
+
+    .ftop .f4 {
+        margin: 0 0 0 12%;
+    }
+}

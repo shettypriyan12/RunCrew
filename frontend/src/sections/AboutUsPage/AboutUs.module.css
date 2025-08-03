@@ -1,0 +1,227 @@
+
+.contacthead {
+    background-color: #0343c0;
+    /* display: flex; */
+    position: relative;
+    overflow: hidden;
+}
+
+.contacthead .headbg {
+    white-space: nowrap;
+}
+
+.headbg h2 {
+    font-size: 17em;
+    margin: 0;
+    line-height: .8em;
+    font-weight: 600;
+    letter-spacing: -8px;
+    position: absolute;
+    bottom: 0%;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.headbg h2:nth-child(1) {
+    text-transform: uppercase;
+    text-align: start;
+    letter-spacing: -12px;
+    right: 59.5%;
+    z-index: 0;
+}
+
+.headbg h2:nth-child(2) {
+    font-family: "Barlow Condensed", sans-serif;
+    left: 38.5%;
+    letter-spacing: -11px;
+}
+
+.headbg h2 i {
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+
+.contacthead .headft {
+    width: 100%;
+    padding: 4% 0;
+}
+
+.headft h1 {
+    width: 85%;
+    font-size: 3.6em;
+    font-weight: 600;
+    margin: 0 0 0 -26.5%;
+    padding: 0 60px 4px 0;
+    text-align: end;
+
+    text-transform: uppercase;
+    background-color: #171717;
+}
+
+.headft h1 span {
+    color: white;
+    display: inline-block;
+    padding: 3px 0 3px;
+    transform: skewX(21deg);
+    letter-spacing: -1px;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+
+
+@media (max-width: 424.98px) {
+
+    .contacthead .headft {
+        padding: 11% 0;
+    }
+
+    .headft h1 {
+        width: 100%;
+        margin: 0 0 0 -5%;
+        font-size: 1.625em;
+        white-space: wrap;
+        padding: 0 0 4px 6%;
+        text-align: start;
+    }
+
+    .headft h1 span {
+        letter-spacing: 0;
+    }
+}
+
+@media (min-width :425px) and (max-width: 575.98px) {
+
+    .contacthead .headft {
+        padding: 9% 0;
+    }
+
+    .headft h1 {
+        width: 79%;
+        margin: 0 0 0 -3%;
+        font-size: 1.625em;
+        white-space: wrap;
+        padding: 0 20px 4px 0;
+    }
+
+    .headft h1 span {
+        letter-spacing: 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .contacthead .headft {
+        padding: 9% 0;
+    }
+
+    .headft h1 {
+        width: 81%;
+        margin: 0 0 0 -14%;
+        padding: 0 25px 4px 0;
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    .headbg h2 {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .headbg h2 {
+        font-size: 10em;
+        letter-spacing: -9px;
+        padding: 0 4px 0 0;
+    }
+
+    .headbg h2:nth-child(1) {
+        right: 60.5%;
+        letter-spacing: -9.5px;
+    }
+
+    .headbg h2:nth-child(2) {
+        left: 38%;
+        letter-spacing: -7.5px;
+    }
+
+    .contacthead .headft {
+        padding: 3.5% 0;
+    }
+
+    .headft h1 {
+        width: 79%;
+        margin: 0 0 0 -18%;
+        padding: 0 40px 4px 0;
+        font-size: 2.4em;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .headbg h2 {
+        font-size: 13.1em;
+        letter-spacing: -10px;
+    }
+
+    .headbg h2:nth-child(1) {
+        right: 59.5%;
+        letter-spacing: -10px;
+    }
+
+    .headbg h2:nth-child(2) {
+        left: 39%;
+    }
+
+    .headft h1 {
+        width: 81%;
+        font-size: 2.8em;
+        padding: 0 45px 4px 0;
+    }
+
+    .headft h1 span {
+        letter-spacing: -.1px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .headbg h2 {
+        font-size: 17.5em;
+        /* color: red; */
+    }
+
+    .headbg h2:nth-child(1) {
+        right: 61%;
+    }
+
+    .headbg h2:nth-child(2) {
+        left: 39%;
+    }
+}
+
+@media (min-width: 2560px) {
+    .headbg h2 {
+        font-size: 32em;
+        letter-spacing: -21px;
+    }
+
+    .headbg h2:nth-child(1) {
+        right: 59.8%;
+        letter-spacing: -22px;
+    }
+
+    .headbg h2:nth-child(2) {
+        left: 38.6%;
+        letter-spacing: -22px;
+    }
+
+    .contacthead .headft {
+        padding: 140px 0 !important;
+    }
+
+    .headft h1 {
+        width: 77%;
+        padding-right: 35px;
+    }
+}

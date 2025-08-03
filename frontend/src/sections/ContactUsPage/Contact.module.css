@@ -1,0 +1,28 @@
+.contacts .map {
+    height: 90vh;
+}
+
+
+@media (max-width: 575.98px) {
+    .contacts .map{
+        height: 40vh;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .contacts .map {
+        height: 40vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .contacts .map {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .contacts .map {
+        height: 60vh;
+    }
+}

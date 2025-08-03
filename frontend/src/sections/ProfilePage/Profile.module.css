@@ -1,0 +1,33 @@
+/* Profile.css */
+.profilecontainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+.profilesection {
+    margin-top: 2rem;
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.profilesection h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.eventName{
+    text-transform: capitalize;
+    font-weight: 600;
+}

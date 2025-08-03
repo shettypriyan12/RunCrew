@@ -1,0 +1,150 @@
+.abtsection4 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f8f9;
+}
+
+.abtsection4 .s4body {
+    width: 62%;
+    color: #1e1e1e;
+    text-align: center;
+}
+
+.s4body>p {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    word-spacing: .8px;
+    margin: 0 0 15.5px;
+}
+
+.s4body>h1 {
+    font-size: 3.566em;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 98%;
+    letter-spacing: -.5px;
+}
+
+.s4body>h6 {
+    margin: 40px 0 8px;
+    font-size: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.s4body>span {
+    color: #919191;
+    text-transform: capitalize;
+}
+
+@media (max-width: 575.98px) {
+    .abtsection4 .s4body {
+        width: 71%;
+    }
+
+    .s4body>p {
+        font-size: 13px;
+        margin: 0 0 7.8px;
+    }
+
+    .s4body>h1 {
+        font-size: 1.65em;
+        line-height: 110%;
+        letter-spacing: 0.1px;
+    }
+
+    .s4body>h6 {
+        font-size: 17px;
+        margin: 15px 0 8px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .abtsection4 .s4body {
+        width: 65%;
+    }
+
+    .s4body>p {
+        font-size: 13px;
+        margin: 0 0 7.8px;
+    }
+
+    .s4body>h1 {
+        font-size: 2em;
+        line-height: 107%;
+    }
+
+    .s4body>h6 {
+        font-size: 18px;
+        margin: 15px 0 8px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .abtsection4 .s4body {
+        width: 72%;
+    }
+
+    .s4body>p {
+        margin: 0 0 8.4px;
+    }
+
+    .s4body>h1 {
+        font-size: 2.4em;
+        line-height: 110%;
+    }
+
+    .s4body>h6 {
+        font-size: 19px;
+        margin: 20px 0 5px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .abtsection4 .s4body {
+        width: 68%;
+    }
+
+    .s4body>p {
+        margin: 0 0 12.6px;
+    }
+
+    .s4body>h1 {
+        font-size: 2.9em;
+        line-height: 100%;
+    }
+
+    .s4body>h6 {
+        font-size: 20px;
+        margin: 20px 0 5px;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .abtsection4 .s4body {
+        width: 58%;
+    }
+
+    /* .s4body>p {} */
+
+    .s4body>h1 {
+        line-height: 100%;
+    }
+
+    /* .s4body>h6 {} */
+
+    /* .s4body>span {} */
+
+}
+
+@media (min-width: 2560px) {
+    .abtsection4 .s4body {
+        width: 33%;
+    }
+}

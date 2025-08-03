@@ -1,0 +1,731 @@
+.contactform {
+    margin: 0;
+    background-color: #F7F8F9;
+}
+
+.error {
+    color: #ff5b4a;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: .2px;
+}
+
+.container {
+    display: flex;
+    gap: 60px;
+    /* justify-content: space-between; */
+    padding: 100px 20px;
+    overflow: hidden;
+}
+
+.contactformleft {
+    margin: 0;
+    width: 40%;
+}
+
+.contactformleft .title1 {
+    margin: 0 0 26px;
+}
+
+.title1 p {
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 0 0 14px;
+    color: #1E1E1E;
+    font-weight: 700;
+    letter-spacing: .7px;
+}
+
+.title1 h1 {
+    margin: 0;
+    text-align: start;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 57px;
+    line-height: 56px;
+    letter-spacing: -.7px;
+}
+
+.contactformleft>p {
+    width: 94%;
+    font-size: 18px;
+    color: #737373;
+    line-height: 28px;
+}
+
+.contactformleft .location {
+    display: flex;
+    gap: 16px;
+    margin: 32px 0 10px;
+}
+
+.location svg {
+    color: #cccc00;
+    font-size: 26px;
+    vertical-align: middle;
+}
+
+.location p {
+    color: #737373;
+    font-size: 17px;
+    line-height: 26px;
+    /* margin: 0 0 8px; */
+}
+
+.contactformleft .phone {
+    display: flex;
+    gap: 18px;
+    margin: 10px 0;
+    transition: all 1ms ease-out;
+}
+
+.phone:hover svg {
+    color: #1E1E1E;
+}
+
+.phone svg {
+    color: #cccc00;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.phone h5 {
+    margin: 0 0 16px;
+    font-weight: 600;
+}
+
+.contactformleft .omail {
+    display: flex;
+    gap: 23px;
+    margin: 10px 0;
+}
+
+.omail svg {
+    color: #cccc00;
+    font-size: 22px;
+    margin: 2px 0 0 3px;
+}
+
+.omail p {
+    width: fit-content;
+    color: #737373;
+    font-size: 17px;
+    line-height: 26px;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    padding: 0 0 3px;
+}
+
+.omail p:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: #1E1E1E;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: center;
+}
+
+.omail p:hover::after {
+    transform: scaleX(1);
+    transition: all .4s ease-in-out;
+}
+
+
+
+.contactformrght {
+    margin-left: 20px;
+    transition: all .5s ease-in;
+}
+
+.outerfield {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.field {
+    margin: 14px 0;
+    transition: all .3s ease-in;
+}
+
+.eBorder {
+    border-bottom: .5px solid rgba(255, 0, 0, 0.699);
+}
+
+.field .input {
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-bottom: .5px solid #80808069;
+    outline: none;
+    padding: 13px 0;
+    margin-bottom: 12px;
+    text-align: start;
+}
+
+.input input {
+    width: 230px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: 16px;
+    transition: all 1s ease-in-out;
+}
+
+.input svg {
+    font-size: 20px;
+    color: #1E1E1E;
+}
+
+.input::after {
+    content: "";
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: .5px;
+    background-color: black;
+}
+
+.input:hover::after {
+    width: 100%;
+    transition: all .3s ease-in;
+}
+
+.input input::placeholder {
+    color: #1e1e1e;
+    transition: all .2s ease-in;
+}
+
+.field .text {
+    display: flex;
+    position: relative;
+    border-bottom: .5px solid #80808069;
+    outline: none;
+    padding: 13px 0;
+    margin-bottom: 12px;
+    text-align: start;
+}
+
+.text textarea {
+    resize: none;
+    width: 90%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: 16px;
+}
+
+.text::after {
+    content: "";
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: .5px;
+    background-color: black;
+}
+
+.text svg {
+    font-size: 23px;
+}
+
+.text:hover::after {
+    width: 100%;
+    transition: all .3s ease-in;
+}
+
+.text textarea::placeholder {
+    color: #1e1e1e;
+    transition: all .2s ease-in;
+}
+
+.field .check {
+    display: flex;
+    align-items: baseline;
+    gap: 9px;
+    cursor: pointer;
+}
+
+.check input {
+    cursor: pointer;
+}
+
+.check label {
+    cursor: pointer;
+    font-size: 14px;
+    color: #737373;
+}
+
+.check u:hover {
+    color: #1e1e1e;
+    transition: all .3s ease-in-out;
+}
+
+.submit {
+    margin: 3% 0 0;
+    padding: 17px 35px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    color: white;
+    background-color: #0343C0;
+    border: none;
+    text-transform: uppercase;
+    line-height: 21px;
+}
+
+.submit svg {
+    font-size: 20px;
+}
+
+.submit:hover {
+    background-color: #023CAC;
+    transition: .3s ease-in-out;
+}
+
+.submit:hover svg {
+    filter: drop-shadow(0 0 4px white);
+}
+
+.sent {
+    font-size: 15px;
+    line-height: 17px;
+    width: fit-content;
+    padding: 18px;
+    background-color: white;
+    color: #1E1E1E;
+    white-space: wrap;
+    word-spacing: .7px;
+    margin-top: 5%;
+    border: 1px solid #38bb7a;
+    box-shadow: 0px 0px 8px 0px #38bb7a;
+    border-radius: 4px;
+}
+
+.toast {
+    font-size: 14px;
+    background-color: #ff5b4a;
+    border-radius: 5px;
+    color: white;
+    padding: 16px 22px;
+    position: fixed;
+    bottom: 5%;
+    right: 4%;
+    z-index: 1;
+    transition: all .4s ease-in-out;
+}
+
+.generalError {
+    font-size: 15px;
+    line-height: 17px;
+    width: fit-content;
+    padding: 18px;
+    background-color: white;
+    color: #1E1E1E;
+    white-space: wrap;
+    word-spacing: .7px;
+    margin-top: 5%;
+    border: 1px solid #f04c49;
+    box-shadow: 0px 0px 8px 0px #f04c49;
+    border-radius: 4px;
+}
+
+
+@media (max-width :324.98px) {}
+
+@media (max-width :424.98px) {
+    .container {
+        flex-direction: column;
+        padding: 54px 0;
+        gap: 0px;
+    }
+
+    .contactformleft {
+        width: 100%;
+        margin: 0 10px;
+    }
+
+    .contactformleft .title1 {
+        line-height: 10px;
+        margin: 0 0 1%;
+    }
+
+    .title1 p {
+        font-size: 13px;
+        letter-spacing: 1.1px;
+    }
+
+    .title1 h1 {
+        line-height: 28px;
+        font-size: 26px;
+    }
+
+    .contactformleft>p{
+        font-size: 16px;
+        margin: 20px 0;    
+    }
+
+    .contactformleft .location{
+        margin: 0 0 12px;
+        gap: 22px;
+    }
+    .location svg{
+        font-size: 22px;
+    }
+    .location p{
+        font-size: 16px;
+        margin: 0 0;
+    }
+    .phone svg{
+        font-size: 24px;
+    }
+    .phone h5 {
+        font-size: 18px;
+        margin: 0;
+    }
+    .omail svg{
+        font-size: 20px;
+    }
+    .omail p{
+        font-size: 16px;
+    }
+
+    .contactformrght {
+        margin: 0 10px;
+    }
+    .contactformrght .outerfield {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .text textarea{
+        width: 92%;
+        margin-left: 11px;
+    }
+
+    .field {
+        margin: 14px 0 0;
+    }
+
+    .field .error {
+        font-size: 12px !important;
+    }
+
+    .check {
+        margin: 0 0 8px;
+    }
+
+    .submit {
+        margin: 4% 0 0;
+        padding: 12px 30px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 575.98px) {
+    .container {
+        flex-direction: column;
+        padding: 54px 0;
+        gap: 0px;
+    }
+
+    .contactformleft {
+        width: 100%;
+        margin: 0 20px;
+    }
+
+    .contactformleft .title1 {
+        line-height: 10px;
+        margin: 0 0 1%;
+    }
+
+    .title1 p {
+        font-size: 13px;
+        letter-spacing: 1.1px;
+    }
+
+    .title1 h1 {
+        line-height: 35px;
+        font-size: 28px;
+        display: inline;
+    }
+
+    .contactformleft>p{
+        font-size: 16px;
+        margin: 20px 0;    
+    }
+
+    .contactformleft .location{
+        margin: 0 0 12px;
+        gap: 22px;
+    }
+    .location svg{
+        font-size: 22px;
+    }
+    .location p{
+        font-size: 16px;
+        margin: 0 0;
+    }
+    .phone svg{
+        font-size: 24px;
+    }
+    .phone h5 {
+        font-size: 19px;
+        margin: 0;
+    }
+    .omail svg{
+        font-size: 20px;
+    }
+    .omail p{
+        font-size: 16px;
+    }
+
+    .contactformrght {
+        margin: 0;
+        margin: 0 20px;
+    }
+    .contactformrght .outerfield {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .text textarea{
+        width: 91%;
+        margin-left: 13px;
+    }
+
+    .field {
+        margin: 14px 0 0;
+    }
+
+    .field .error {
+        font-size: 12px !important;
+    }
+
+    .submit {
+        margin: 4% 0 0;
+        padding: 12px 30px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container {
+        flex-direction: column;
+        padding: 60px 0;
+        gap: 30px;
+    }
+
+    .contactformleft {
+        /* padding-left: 5%; */
+        width: 100%;
+        margin: 0 30px;
+    }
+
+    .contactformleft .title1 {
+        line-height: 10px;
+        margin: 0 0 1%;
+    }
+
+    .title1 p {
+        font-size: 13px;
+        letter-spacing: 1.1px;
+    }
+
+    .title1 h1 {
+        line-height: 35px;
+        font-size: 32px;
+    }
+
+    .contactformleft>p{
+        font-size: 16px;
+        margin: 20px 0;    
+    }
+
+    .contactformleft .location{
+        margin: 0 0 12px;
+    }
+    .location svg{
+        font-size: 22px;
+    }
+    .location p{
+        font-size: 16px;
+        margin: 0 0;
+    }
+    .phone svg{
+        font-size: 24px;
+    }
+    .phone h5 {
+        font-size: 19px;
+        margin: 0;
+    }
+    .omail svg{
+        font-size: 20px;
+    }
+    .omail p{
+        font-size: 16px;
+    }
+
+    .contactformrght {
+        margin: 0;
+        margin: 0 30px;
+    }
+    .contactformrght .outerfield {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .field {
+        margin: 14px 0 0;
+    }
+
+    .field .error {
+        font-size: 12px !important;
+    }
+
+    .submit {
+        margin: 4% 0 0;
+        padding: 12px 30px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .container {
+        padding: 80px 0;
+        gap: 15px;
+    }
+
+    .contactformleft {
+        width: 50%;
+    }
+
+    .contactformleft .title1 {
+        line-height: 10px;
+    }
+
+    .title1 p {
+        font-size: 14px;
+        letter-spacing: 1.1px;
+    }
+
+    .title1 h1 {
+        line-height: 38px;
+        font-size: 38px;
+    }
+
+    .contactformleft>p {
+        width: 85%;
+        font-size: 17px;
+    }
+
+    .contactformleft .phone {
+        margin: 0 0 10px;
+    }
+
+    .phone h5 {
+        font-size: 19px;
+    }
+
+    .contactformrght {
+        width: 50%;
+        margin: 0;
+    }
+
+    .contactformrght .outerfield {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .input input {
+        width: 120px;
+    }
+
+    .field {
+        margin: 14px 0 0;
+    }
+
+    .field .error {
+        font-size: 12px !important;
+    }
+
+    .submit {
+        margin: 4% 0 0;
+        padding: 15px 35px 15px 32px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .container {
+        padding: 90px 0;
+        gap: 20px;
+    }
+
+    .contactformleft {
+        width: 50%;
+    }
+
+    .contactformleft .title1 {
+        line-height: 10px;
+    }
+
+    .title1 p {
+        font-size: 14px;
+        letter-spacing: 1.1px;
+    }
+
+    .title1 h1 {
+        line-height: 45px;
+        font-size: 46px;
+    }
+
+    .contactformleft>p {
+        width: 100%;
+        font-size: 17px;
+    }
+
+
+    .contactformrght {
+        width: 50%;
+    }
+
+    .contactformrght .outerfield {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .input input {
+        width: 190px;
+    }
+
+    .submit {
+        margin: 4% 0 0;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .container {
+        padding: 120px 20px;
+        gap: 80px;
+    }
+
+    .submit {
+        margin: 4% 0 0;
+    }
+}
+
+@media (min-width: 2560px) {
+    .container {
+        padding: 120px 0;
+        justify-content: space-around;
+    }
+
+}

@@ -1,0 +1,228 @@
+.singleCard{
+    display: flex;
+    border-top: 1px solid rgba(145, 145, 145, 0.3);
+    padding-top: 28px;
+    margin-top: 30px;
+    /* cursor: pointer; */
+}
+
+.sinfoCard{
+    width: 100%;
+    display: flex;
+    text-align: start;
+}
+
+.sinfoCard:hover .cardcenter .img img{
+    transform: scale(1.05);
+}
+
+.sinfoCard .cardleft{
+    min-width: 86px;
+    padding: 6px 3% 0 0 ;
+}
+.cardleft h3{
+    font-weight: 600;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+}
+.cardleft p{
+    color: #919191;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0
+}
+
+.sinfoCard .cardcenter{
+    display: flex;
+}
+.cardcenter .img{
+    width: 165px;
+    height: 125px;
+    overflow: hidden;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.i1{
+    padding-left: 24px;
+    padding-top: 12px;
+}
+.i1 h4{
+    color: #1e1e1e;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.i2{
+    display: flex;
+    align-items: center;
+}
+.i2 p{
+    color: #1e1e1e;
+    font-weight: 500;
+    text-align: center;
+}
+.i3{
+    padding-left: 16px;
+    text-align: center;
+}
+.i3 p{
+    color: #919191;
+    font-size: 14px;
+    padding-left: 2px;
+    letter-spacing: 0.2px;
+    text-align: left;
+}
+.i3 p svg{
+    font-size: 24px;
+    color: #e4e41a;
+    padding: 0 3px 2px 0;
+}
+
+.singleCard .cardright h4{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
+
+@media (max-width: 575.98px) {
+    .singleCard{
+        flex-direction: column;
+        margin-top: 0;
+        
+    }
+    .sinfoCard{
+        flex-direction: column;
+        justify-content: center ;
+    }
+    .sinfoCard .cardleft{
+        display: flex;
+        align-items: baseline;
+        padding: 0 0 10px 3px;
+    }
+    .cardleft h3{
+        font-size: 28px;
+    }
+    .cardleft p{
+        padding-left: 6px;
+    }
+    .sinfoCard .cardcenter{
+        flex-direction: column;
+    }
+    .cardcenter .img{
+        width: 100%;
+        height: 100%;
+    }
+    .i1{
+        padding-left: 0;
+    }
+    .i1>h4{
+        font-size: 22px;
+    }
+    .i2>p{
+        font-size: 15px;
+        white-space: nowrap;
+        margin-bottom: 18px;
+    }
+    .i3 p{
+        margin: 0;
+    }
+
+    .cardright h4{
+        text-align: left;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .singleCard{
+        flex-direction: column;
+        margin-top: 0;
+        
+    }
+    .sinfoCard{
+        flex-direction: column;
+        justify-content: center ;
+    }
+    .sinfoCard .cardleft{
+        display: flex;
+        align-items: baseline;
+        padding: 0 0 10px 3px;
+    }
+    .cardleft h3{
+        font-size: 28px;
+    }
+    .cardleft p{
+        padding-left: 6px;
+    }
+    .sinfoCard .cardcenter{
+        flex-direction: column;
+    }
+    .cardcenter .img{
+        width: 100%;
+        height: 100%;
+    }
+    .i1{
+        padding-left: 0;
+    }
+    .i1>h4{
+        font-size: 22px;
+    }
+    .i2{
+        padding: 2px 0 6px;
+    }
+    .i2>p{
+        font-size: 15px;
+        white-space: nowrap;
+        margin-bottom: 0px;
+    }
+    .i3 p{
+        margin: 0;
+    }
+
+    .cardright h4{
+        text-align: left;
+        padding-top: 16px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .i2>p{
+        /* font-size: 14px; */
+        width: 90px;
+        font-weight: 500;
+        
+    }
+    .i3 p{
+        padding: 0;
+        margin: 0;
+        white-space: break-spaces;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+}
+
+
+@media (min-width: 1400px) {
+    
+}

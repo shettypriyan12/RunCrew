@@ -1,0 +1,43 @@
+.errorPage{
+    text-align: center;
+    background-color: #F7F8F9;
+}
+
+.errors{
+    padding: 3% 0 5%;
+}
+
+.errors h1{
+    color: #DFDFE1;
+    font-weight: 600;
+    font-size: 26.5em;
+    margin: 0;
+    padding: 0;
+}
+.errors h2{
+    color: #1E1E1E;
+    font-weight: 600;
+    font-size: 2.9em;
+}
+.errors p{
+    color: #737373;
+    font-size: 18px;
+    margin: 1% 0 0;
+}
+
+.redirect{
+    font-size: 15px;
+    font-weight: 800;
+    padding: 17px 50px;
+    color: white;
+    background-color: #CCCC00;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    letter-spacing: 1.3px;
+    margin: 4% 0 0;
+}
+
+.redirect:hover{
+    background-color: #B7B700 ;
+}

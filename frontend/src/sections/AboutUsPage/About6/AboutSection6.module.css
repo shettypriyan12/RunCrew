@@ -1,0 +1,328 @@
+.abtsection6 {
+    padding: 0;
+    overflow: hidden;
+}
+
+.abtsection6 .s6body {
+    display: flex;
+    justify-content: left;
+}
+
+.s6body .s6left {
+    overflow: hidden;
+    width: 100%;
+}
+
+.s6left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.s6body .s6rght {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E1E1E;
+    box-shadow: 0px 0px 140px 200px #1E1E1E;
+}
+
+.s6rght .rbox {
+    padding: 150px 4%;
+    color: white;
+}
+
+.rbox>p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    margin: 0 0 7px;
+}
+
+.rbox>h1 {
+    font-size: 3.565em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 35px;
+    letter-spacing: -.6px;
+}
+
+.rbox>span {
+    display: block;
+    width: 80%;
+    color: #CBCBCB;
+    font-size: 19px;
+    line-height: 34px;
+}
+
+.rbox .user {
+    margin: 35px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 25px;
+}
+
+.user .userimg {
+    width: 12%;
+    position: relative;
+}
+
+.user .userimg::after {
+    content: "’’";
+    position: absolute;
+    right: 0%;
+    bottom: -5px;
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #CCCC00;
+}
+
+.userimg img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+}
+
+.user .userinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.userinfo h5 {
+    font-size: 21px;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.userinfo p {
+    color: #CBCBCB;
+    font-size: 16px;
+    margin: 0;
+    text-shadow: 0px 0px 1px #CBCBCB;
+    text-transform: capitalize;
+}
+
+
+@media (max-width: 575.98px) {
+    .abtsection6 .s6body {
+        flex-direction: column;
+    }
+    .s6body .s6left{
+        height: 300px;
+    }
+    .s6left img{
+        object-position: top;
+    }
+    .s6body .s6rght {
+        box-shadow: 0px 0px;
+    }
+
+    .s6rght .rbox {
+        padding: 54px 0 54px 6%;
+    }
+
+    .rbox>p{
+        font-size: 13px;
+    }
+    .rbox>h1 {
+        font-size: 26px;
+        margin: 0 0 20px;
+        letter-spacing: 0;
+    }
+
+    .rbox>span {
+        width: 94%;
+        font-size: 16px;
+        line-height: 27px;
+        /* letter-spacing: 0.3px; */
+        word-spacing: .5px;
+    }
+
+    .rbox .user {
+        margin: 25px 0 0;
+    }
+
+    .user .userimg {
+        width: 16%;
+    }
+
+    .user .userinfo {
+        gap: 3px;
+    }
+
+    .userinfo h5 {
+        font-size: 17px;
+        line-height: 1.14em;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .abtsection6 .s6body {
+        flex-direction: column;
+    }
+    .s6body .s6left{
+        height: 300px;
+    }
+    .s6left img{
+        object-position: top;
+    }
+    .s6body .s6rght {
+        box-shadow: 0px 0px;
+    }
+
+    .s6rght .rbox {
+        padding: 60px 6%;
+    }
+
+    .rbox>p{
+        font-size: 13px;
+    }
+    .rbox>h1 {
+        font-size: 2em;
+        margin: 0 0 25px;
+    }
+
+    .rbox>span {
+        width: 96%;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .rbox .user {
+        margin: 25px 0 0;
+    }
+
+    .user .userimg {
+        width: 13%;
+    }
+
+    .user .userinfo {
+        gap: 3px;
+    }
+
+    .userinfo h5 {
+        font-size: 17px;
+        line-height: 1.14em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .s6left img {
+        object-position: 55%;
+    }
+
+    .s6body .s6rght {
+        width: 89%;
+        box-shadow: 0px 0px 120px 160px #1E1E1E;
+    }
+
+    .s6rght .rbox {
+        padding: 80px 0;
+    }
+
+    .rbox>h1 {
+        font-size: 2.4em;
+        margin: 0 0 30px;
+    }
+
+    .rbox>span {
+        width: 92%;
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    .rbox .user {
+        margin: 25px 0 0;
+    }
+
+    .user .userimg {
+        width: 18%;
+    }
+
+    .user .userinfo {
+        gap: 3px;
+    }
+
+    .userinfo h5 {
+        font-size: 17px;
+        letter-spacing: .5px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .s6body .s6rght {
+        width: 89%;
+    }
+
+    .s6rght .rbox {
+        padding: 90px 0;
+    }
+
+    .rbox>h1 {
+        font-size: 2.9em;
+    }
+
+    .rbox>span {
+        width: 92%;
+        font-size: 17px;
+    }
+
+    .rbox .user {
+        margin: 25px 0 0;
+    }
+
+    .user .userimg {
+        width: 14%;
+    }
+
+    .user .userinfo {
+        gap: 3px;
+    }
+
+    .userinfo h5 {
+        font-size: 17px;
+        letter-spacing: .5px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .s6rght .rbox {
+        padding: 180px 0 180px 2%;
+    }
+}
+
+@media (min-width: 2560px) {
+    .s6body .s6left {
+        width: 55%;
+    }
+
+    .s6rght .rbox {
+        padding: 180px 0 180px 2%;
+    }
+
+    .rbox>span {
+        width: 50%;
+    }
+
+    .user .userimg {
+        width: 6%;
+    }
+
+}

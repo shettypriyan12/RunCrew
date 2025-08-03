@@ -1,0 +1,97 @@
+.s3 {
+    width: 100%;
+    position: relative;
+}
+
+.causes {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.causeSlider {
+    display: inline-block;
+    animation: 8s slide infinite linear;
+}
+
+.causeSlider h1 {
+    font-size: 10rem;
+}
+
+.causeSlider h1 span {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    margin: 0 10px 0;
+}
+
+.causeSlider h1 span:nth-child(1) {
+    color: #1e1e1e;
+}
+
+.causeSlider h1 span:nth-child(2) {
+    color: #cccc00;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Extra small: <576px */
+@media (max-width: 575.98px) {
+    .causeSlider h1 {
+        font-size: 3.1rem;
+    }
+
+    h1 span{
+        margin: 0 5px 0;
+    }
+
+}
+
+/* Small: ≥576px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* small devices */
+    .causeSlider h1 {
+        font-size: 4rem;
+    }
+
+    h1 span{
+        margin: 0 5px 0;
+    }
+}
+
+/* Medium: ≥768px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* tablets */
+    .causeSlider h1 {
+        font-size: 5.4rem;
+    }
+}
+
+/* Large: ≥992px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* desktops */
+    .causeSlider h1 {
+        font-size: 7.4rem;
+    }
+}
+
+
+@media (min-width:2560px){
+    .causeSlider h1 {
+        font-size: 18.4rem;
+    }
+    .causeSlider {
+        animation: 12s slide infinite linear;
+    }
+    h1 span {
+        margin: 0 35px 0;
+    }
+}

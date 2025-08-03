@@ -1,0 +1,745 @@
+.headmain {
+    width: 100%;
+    transition: transform 0.8s ease-in-out;
+    z-index: 1030;
+}
+
+.home {
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+}
+
+.other {
+    background-color: #171717 !important;
+    padding: 1% 0 1.4%;
+}
+
+.hide {
+    transform: translateY(-150%);
+    transition: all 0s ease-out;
+}
+
+.show {
+    transform: translateY(0);
+}
+
+.og {
+    background-color: transparent;
+}
+
+.bg {
+    background-color: #171717;
+}
+
+
+.headmain .navbar {
+    padding: 8px 48px 0;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px 5px;
+    position: relative;
+    font-weight: 700;
+}
+
+.navinfo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu {
+    /* width: 100%; */
+    text-align: end;
+}
+
+.menu button:focus {
+    box-shadow: none;
+    border: none;
+    margin: 0;
+}
+
+.menu .menubutton {
+    font-size: 24px;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.header .list {
+    width: 100%;
+    margin: 0 0 0 0;
+    display: flex;
+    justify-content: end;
+    background-color: transparent;
+}
+
+.list>div {
+    width: fit-content;
+    padding: 15px 5px;
+}
+
+.list>div>a {
+    width: 100%;
+    font-family: "Barlow Condensed", sans-serif;
+    color: rgb(255, 255, 255) !important;
+    font-weight: 600;
+    font-size: 17px;
+    margin: 0 2px 0;
+    padding: 8px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+}
+
+.list>a::before {
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: all .3s ease-in-out;
+}
+
+.list>div>a::before {
+    content: "";
+    background-color: #cccc00;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: all .3s ease-in-out;
+}
+
+.list>div>a::after {
+    display: none;
+}
+
+.list>div>a:hover {
+    color: #cccc00 !important;
+}
+
+.list>div>a:hover::before {
+    width: 100%;
+}
+
+.list>div>a:focus {
+    color: white !important;
+}
+
+.list>div>a.active{
+    color: #cccc00 !important;
+}
+.list>div>a.active::before{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #cccc00;
+    width: 100%;
+}
+
+.list>div>div,
+.list>div>div>a,
+.list>div>div>div>div,
+.list>div>div>div>div>a {
+    color: rgba(255, 255, 255, 0.801);
+    background-color: #212121 !important;
+    border-radius: 0;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}
+
+.list>div>div>div>a {
+    color: rgba(255, 255, 255, 0.801);
+    padding: 4px 16px !important;
+    font-weight: 400;
+    border-radius: 0;
+    transition: all .3s ease-in-out;
+}
+
+.list>div>div>a:hover,
+.list>div>div>div>a:hover,
+.list>div>div>div>div>a:hover {
+    padding-left: 20px !important;
+}
+
+/* HOME underline */
+.list>div:nth-child(1)>div>a:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    left: 12%;
+    bottom: 25%;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.list>div:nth-child(1)>div>a:nth-child(1):hover::before {
+    width: 46%;
+}
+
+/* 
+.list>div:nth-child(1)>div>a:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    left: 10%;
+    top: 48%;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.list>div:nth-child(1)>div>a:nth-child(2):hover::before {
+    width: 85%;
+}
+
+.list>div:nth-child(1)>div>a:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    left: 10%;
+    top: 70%;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.list>div:nth-child(1)>div>a:nth-child(3):hover::before {
+    width: 83%;
+}
+
+.list>div:nth-child(1)>div>a:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    left: 10%;
+    top: 92%;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.list>div:nth-child(1)>div>a:nth-child(4):hover::before {
+    width: 81%;
+} */
+
+/* PAGE underline */
+.list>div:nth-child(2)>div>a:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    left: 12%;
+    top: 25%;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.list>div:nth-child(2)>div>a:nth-child(1):hover::before {
+    width: 45%;
+}
+
+.list>div:nth-child(2)>div>a:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    left: 12%;
+    top: 48%;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.list>div:nth-child(2)>div>a:nth-child(2):hover::before {
+    width: 34%;
+}
+
+.list>div:nth-child(2)>div>a:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    left: 12%;
+    bottom: 29%;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.list>div:nth-child(2)>div>a:nth-child(3):hover::before {
+    width: 46%;
+}
+
+.list>div:nth-child(2)>div>a:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    left: 12%;
+    bottom: 6%;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.list>div:nth-child(2)>div>a:nth-child(4):hover::before {
+    width: 72%;
+}
+
+/* 
+.list>div:nth-child(2)>div>a:nth-child(5)::before {
+    content: "";
+    position: absolute;
+    left: 12%;
+    top: 77%;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.list>div:nth-child(2)>div>a:nth-child(5):hover::before {
+    width: 70%;
+} */
+
+.list>div:nth-child(2)>div>div>a::after {
+    position: absolute;
+    right: 14%;
+    bottom: 10px;
+    font-size: larger;
+}
+
+.list>div:nth-child(2)>div>div>a::before {
+    content: "";
+    position: absolute;
+    left: 13%;
+    top: 80%;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.list>div:nth-child(2)>div>div>a:hover::before {
+    width: 26%;
+}
+
+/* Tools dropdown */
+/* .list>div:nth-child(2)>div>div>div {
+    position: absolute;
+    left: -110% !important;
+}
+/*
+
+/* Tools underine */
+/* .list>div:nth-child(2)>div>div>div>a:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    left: 12%;
+    top: 33%;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.list>div:nth-child(2)>div>div>div>a:nth-child(1):hover::before {
+    width: 45%;
+}
+
+.list>div:nth-child(2)>div>div>div>a:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    left: 12%;
+    bottom: 37%;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.list>div:nth-child(2)>div>div>div>a:nth-child(2):hover::before {
+    width: 55%;
+}
+
+.list>div:nth-child(2)>div>div>div>a:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    left: 12%;
+    bottom: 9%;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.list>div:nth-child(2)>div>div>div>a:nth-child(3):hover::before {
+    width: 80%;
+} */
+
+/* SHOP underine */
+.list>div:nth-child(3)>div>a:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    left: 12%;
+    top: 44%;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.list>div:nth-child(3)>div>a:nth-child(1):hover::before {
+    width: 25%;
+}
+
+.list>div:nth-child(3)>div>a:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    left: 12%;
+    bottom: 13%;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.list>div:nth-child(3)>div>a:nth-child(2):hover::before {
+    width: 50%;
+}
+
+
+
+.list>div>div>a:hover,
+.list>div>div>a:focus,
+.list>div>div>div>div>a:hover,
+.list>div>div>div>div>a:focus {
+    color: white;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+}
+
+.cart {
+    width: fit-content;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.carticon {
+    color: white;
+    font-size: 24px;
+}
+
+.search {
+    width: fit-content;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.searchicon {
+    color: white;
+    font-size: 24px;
+}
+
+.profile {
+    width: fit-content;
+    margin: 0 10px;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    position: relative;
+}
+
+.usericon {
+    color: white;
+    font-size: 23px;
+}
+
+.abtpf {
+    position: absolute;
+    width: 120px;
+    right: 0;
+    top: 50px;
+    background-color: #212121;
+    color: rgba(255, 255, 255, 0.801);
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+    transition: all 1s ease-in-out;
+}
+
+.abtpf a {
+    width: fit-content;
+    text-align: left;
+    padding: 4px 10px;
+    font-weight: 500;
+    transition: all .2s ease-out;
+}
+
+.abtpf a:hover {
+    text-shadow: 0 0 white;
+    border-bottom: .4px solid white;
+}
+
+.menubutton {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.navModalBody {
+    padding: 32% 0 0;
+    background-color: #212121;
+}
+
+.modalContent .closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 24px;
+    font-weight: 400;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.modalContent .headericon {
+    position: absolute;
+    left: 10px;
+    top: 30px;
+}
+
+.headericon img {
+    width: 80%;
+    background-color: transparent;
+}
+
+.modalContent .menuall {
+    width: 100%;
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.menuall a button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.menuall .menuitem {
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.menuheading button {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.menuheading button svg {
+    font-size: 32px;
+    font-weight: 600;
+    padding: 0 0 0 4px;
+}
+
+.menuitem div {
+    margin: 2% 0;
+    text-align: center;
+}
+
+.menubody {
+    font-size: 16px;
+    min-width: 110px;
+}
+
+.menubody:hover,
+.menubody:focus {
+    color: white;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+}
+
+.socialsection {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 8% 9% 0;
+    text-align: center;
+}
+
+.socialsection .socials {
+    margin: 10px 0;
+}
+
+.socials a {
+    margin: 9.5px 10px;
+    text-align: center;
+    align-content: center;
+    vertical-align: middle;
+}
+
+.socials a svg {
+    font-weight: 600;
+    transition: all .3s ease-in;
+    color: white;
+}
+
+.socials a:nth-child(1) svg {
+    font-size: 16px;
+}
+
+.socials a:nth-child(2) svg {
+    font-size: 16px;
+}
+
+.socials a:nth-child(3) svg {
+    font-size: 20px;
+}
+
+.socials a:nth-child(4) svg {
+    font-size: 20px;
+}
+
+.socials a:nth-child(1):hover svg {
+    color: #3b5998;
+}
+
+.socials a:nth-child(2):hover svg {
+    color: #1da1f2;
+}
+
+.socials a:nth-child(3):hover svg {
+    color: #ea4c89;
+}
+
+.socials a:nth-child(4):hover svg {
+    color: #c862dc;
+}
+
+
+.offcanvas-body {
+    overflow-y: auto;
+    max-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 575.98px) {
+
+    .header {
+        padding: 0px;
+    }
+
+    .header a {
+        margin: 0 0 0 10px;
+    }
+
+    .navinfo {
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+    }
+
+    .header .list {
+        display: none;
+    }
+
+    .navbar {
+        padding: 10px !important;
+    }
+
+    .menu button {
+        padding: 3px 5px 0;
+    }
+
+    .cart,
+    .search,
+    .profile {
+        margin: 0 5px;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* mobile styles */
+
+    .header {
+        padding: 5px;
+    }
+
+    .header a {
+        margin: 0 0 0 15px;
+    }
+
+    .navinfo {
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+    }
+
+    .header .list {
+        display: none;
+    }
+
+    .navbar {
+        padding: 10px !important;
+    }
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    /* small devices */
+    .header a {
+        margin: 0 0 0 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* tablets */
+    .header {
+        padding: 5px 0;
+    }
+
+    .header a {
+        margin: 0 0 0 15px;
+    }
+
+    .headmain .navbar {
+        padding: 0 18px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    /* desktops */
+    .headmain .navbar {
+        padding: 0 10px;
+    }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    /* large desktops */
+}
+
+
+@media (min-width: 1400px) {
+    /* very large screens */
+}

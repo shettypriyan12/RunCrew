@@ -1,0 +1,197 @@
+.logos{
+    overflow: hidden;
+    padding: 0 0 100px;
+}
+
+.logos .logoall{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.logoall .lleft{
+    text-align: end;
+}
+.lleft h1{
+    color: #1E1E1E;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.logoall .lright{
+    display: flex;
+    align-items: center;
+}
+.lright div{
+    margin: 0 11% ;
+} 
+.lright div img{
+    opacity: .25;
+}
+
+.lright div:hover img{
+    opacity: 1;
+    transition: all .3s ease-in;
+}
+
+@media (max-width :324.98px){
+    .logos{
+        padding: 0 0 40px;
+    }
+
+    .logos .logoall{
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .logoall .lleft{
+        display: flex;
+        gap: 3px;
+    }
+    .lleft h1{
+        letter-spacing: .1px;
+        word-spacing: -1.5px;
+        font-size: 22px;
+    }
+
+    .logoall .lright{
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        row-gap: 25px;
+    }
+    .lright div{
+        margin: 0 6%;
+    }
+}
+
+@media (min-width :325px) and (max-width: 575.98px) {
+    .logos{
+        padding: 0 0 50px;
+    }
+
+    .logos .logoall{
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .logoall .lleft{
+        display: flex;
+        gap: 3px;
+    }
+    .lleft h1{
+        letter-spacing: .1px;
+        word-spacing: -1.5px;
+        font-size: 22px;
+    }
+
+    .logoall .lright{
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        row-gap: 25px;
+    }
+    .lright div{
+        margin: 0 8%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .logos{
+        padding: 0 0 50px;
+    }
+
+    .logos .logoall{
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .logoall .lleft{
+        display: flex;
+        gap: 3px;
+    }
+    .lleft h1{
+        letter-spacing: .1px;
+        word-spacing: -1.5px;
+        font-size: 28px;
+    }
+
+    .logoall .lright{
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        row-gap: 25px;
+    }
+    .lright div{
+        margin: 0 8%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .logos{
+        padding: 0 0 50px;
+    }
+
+    .logos .logoall{
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .logoall .lleft{
+        display: flex;
+        gap: 7px;
+    }
+    .lleft h1{
+        font-size: 26px;
+    }
+
+    .logoall .lright{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .lright div{
+        margin: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .logos .logoall{
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .logoall .lleft{
+        display: flex;
+        gap: 7px;
+    }
+    .lleft h1{
+        font-size: 28px;
+    }
+
+    .logoall .lright{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .lright div{
+        margin: 0;
+    }
+}
+
+@media (min-width: 1400px) {
+    .lright div{
+        margin: 0 15%;
+    }
+}
+
+@media (min-width: 2560px){
+    .lright div{
+        margin: 0 16%;
+    }
+}

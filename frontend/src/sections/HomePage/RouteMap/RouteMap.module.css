@@ -1,0 +1,259 @@
+.routemap{
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.maphead{
+    background-color: #cccc00;
+    /* display: flex; */
+    position: relative;
+    overflow: hidden;
+}
+
+.maphead .headbg{
+    /* width: 100%; */
+    white-space: nowrap;
+}
+
+.headbg h2{
+    font-size: 17em;
+    margin: 0;
+    line-height: .8em;
+    font-weight: 600;
+    letter-spacing: -8px;
+    position: absolute;
+    bottom: 0%;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.headbg h2:nth-child(1){
+    text-transform: uppercase;
+    right: 42.5%;
+    z-index: 0;
+}
+.headbg h2:nth-child(2){
+    font-family: "Barlow Condensed", sans-serif ;
+    left: 58.5%;
+}
+
+.headbg h2 i{
+    font-family: "Barlow Condensed", sans-serif ;
+}
+
+
+.maphead .headft{
+    width: 100% ;
+    padding: 4% 0;
+}
+
+.headft h1 {
+    width: 100%;
+    font-size: 3.6em;
+    font-weight: 600;
+    margin: 0 0 0 -26.5%;
+    padding: 0 60px 4px 0;
+    text-align: end;
+
+    text-transform: uppercase;
+    background-color: #171717;
+}
+
+.headft h1 span {
+    color: white;
+    display: inline-block;
+    padding: 3px 0 3px;
+    transform: skewX(21deg);
+    letter-spacing: -1px;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+
+.routemap .img{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+.routemap .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* transform: scale(1.2); */
+}
+
+
+/* (min-width: 425px) and */
+
+@media (max-width: 424.98px) {
+
+    .maphead .headft {
+        padding: 11% 0 ;
+    }
+
+    .headft h1 {
+        width: 100%;
+        margin: 0 0 0 -5%;
+        font-size: 1.625em;
+        white-space: wrap;
+        padding: 0 0 4px 6%;
+        text-align: start;
+    }
+
+    .headft h1 span {
+        letter-spacing: 0;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 575.98px) {
+    
+    .maphead .headft {
+        padding: 9% 0 ;
+    }
+
+    .headft h1 {
+        width: 100%;
+        margin: 0 0 0 -3%;
+        font-size: 1.625em;
+        white-space: wrap;
+        padding: 0 0 4px 5%;
+        text-align: start;
+    }
+
+    .headft h1 span {
+        letter-spacing: 0;
+    }
+
+}
+
+
+/* Small: ≥576px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .maphead .headft {
+        padding: 9% 0;
+    }
+
+    .headft h1 {
+        width: 100%;
+        margin: 0 0 0 -14%;
+        padding: 0 25px 4px 0 ;
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 767.98px){
+    .headbg h2{
+        display: none;
+    }
+
+    .routemap .img{
+        height: 210px;
+    }
+    .routemap .img img{
+        object-position:center right;
+    }
+}
+
+/* Medium: ≥768px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+    .headbg h2{
+        font-size: 10em;
+        letter-spacing: -9px;
+        padding: 0 4px 0 0 ;
+    }
+    .headbg h2:nth-child(1){
+        right: 43.9%;
+        letter-spacing: -9.5px;
+    }
+    .headbg h2:nth-child(2){
+        left: 57%;
+    }
+    
+    .maphead .headft {
+        padding: 3.5% 0 ;
+    }
+
+    .headft h1 {
+        width: 96%;
+        margin: 0 0 0 -18%;
+        padding: 0 40px 4px 0 ;
+        font-size: 2.4em;
+    }
+
+    .routemap .img{
+        height: 350px;
+    }
+    .routemap .img img{
+        object-position:center right;
+    }
+
+}
+
+/* Large: ≥992px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .headbg h2{
+        font-size: 13.1em;
+        letter-spacing: -10px;
+    }
+    .headbg h2:nth-child(1){
+        right: 43.8%;
+    }
+    .headbg h2:nth-child(2){
+        left: 57%;
+    }
+
+    .headft h1 {
+        width: 97.5%;
+        font-size: 2.8em;
+        padding: 0 45px 4px 0 ;
+    }
+    .headft h1 span{
+        letter-spacing: -.1px;
+    }
+
+    .routemap a{
+        height: 350px !important;
+    }
+    .routemap .img img{
+        object-position: right;
+    }
+
+}
+
+
+/* Extra extra large: ≥1400px */
+@media (min-width: 1400px) {
+    .headbg h2{
+        font-size: 17.5em;
+        /* color: red; */
+    }
+
+    .headbg h2:nth-child(1){
+        right: 44%;
+    }
+    
+    .headbg h2:nth-child(2){
+        left: 57%;
+    }
+
+}
+
+@media (min-width:2560px) {
+
+    .headbg h2{
+        font-size: 32em;
+        letter-spacing: -21px;
+    }
+
+    .maphead .headft {
+        padding: 140px 0 !important;
+    }
+    .headft h1{
+        width: 85%;
+        padding-right: 35px;
+    }
+
+}
