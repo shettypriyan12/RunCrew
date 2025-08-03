@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import classes from './HomePage.module.css';
+import classes from './Homepage.module.css';
 import MarathonSlider from './MarathonSlider/MarathonSlider';
 import Section2 from './Section2/Section2';
 import Causes from './Causes/Causes';
