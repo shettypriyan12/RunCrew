@@ -47,7 +47,7 @@ app.listen(port, () => {
 });
 
 app.use(cors(
-  { origin: process.env.VITE_FRONTEND_URL }
+  // { origin: process.env.VITE_FRONTEND_URL }
 ));
 
 app.use(express.json());
