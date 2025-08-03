@@ -42,10 +42,6 @@ try {
   process.exit(1);
 }
 
-app.listen(port, () => {
-  console.log("🚀 Server is running on http://localhost:" + port);
-});
-
 app.use(cors(
   // { origin: process.env.VITE_FRONTEND_URL }
 ));
@@ -55,6 +51,10 @@ app.use('/event-files', express.static('uploads'));
 
 app.get('/', (req, res) => {
   res.send("Server is running....");
+});
+
+app.listen(port, () => {
+  console.log("🚀 Server is running on " + port);
 });
 
 
