@@ -18,7 +18,7 @@ import resultRoutes from './routes/eventResults.route.js'
 import adminStatRoutes from './routes/adminStats.route.js'
 
 const app = express();
-// const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5000;
 
 // MySQL connection
 
@@ -42,6 +42,9 @@ try {
   process.exit(1);
 }
 
+app.listen(port, () => {
+  console.log("🚀 Server is running on http://localhost:" + port);
+});
 
 app.use(cors(
   { origin: process.env.VITE_FRONTEND_URL }
@@ -54,9 +57,6 @@ app.get('/', (req, res) => {
   res.send("Server is running....");
 });
 
-app.listen(port, () => {
-  // console.log("🚀 Server is running on http://localhost:" + port);
-});
 
 app.use('/v1/runcrew', userRoutes);
 app.use('/v1/runcrew', contactRoutes);
