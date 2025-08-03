@@ -8,11 +8,12 @@ import { success, failure } from "../response.js";
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        if (!fs.existsSync("./public/uploads")) {
-            fs.mkdirSync("./public/uploads");
-        }
-        cb(null, './uploads');
-    },
+            const uploadPath = "./uploads";
+            if (!fs.existsSync(uploadPath)) {
+                fs.mkdirSync(uploadPath);
+            }
+            cb(null, uploadPath);
+        },
     filename: function (req, file, cb) {
         const orgName = file.originalname;
         const ext = path.parse(orgName).ext;
@@ -34,7 +35,7 @@ export const addRace = async (req, res) => {
         if (err) return res.status(400).json({ success: false, message: err.message });
 
         const { cat_id, name, start, end, cost, img, location } = req.body;
-        const filename = req.file ? `/uploads/${req.file.filename}` : null;
+        const filename = req.file ? `/event-files/${req.file.filename}` : null;
         const sql = `INSERT INTO races (cat_id, name, start, end, cost, img, location) values (?, ?, ?, ?, ?, ?, ?)`;
 
         try {
