@@ -1,9 +1,11 @@
+.aboutus{
+    overflow: hidden;
+}
 
 .contacthead {
     background-color: #0343c0;
     /* display: flex; */
     position: relative;
-    overflow: hidden;
 }
 
 .contacthead .headbg {
