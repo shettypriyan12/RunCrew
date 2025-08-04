@@ -458,6 +458,8 @@ export const deleteEventAll = async (req, res) => {
                 // else console.log("Image deleted:", fullImgPath);
             });
         }
+        const deleteCatQuery = `DELETE FROM event WHERE id = ?`;
+        await db.query(deleteCatQuery, [cat_id]);
 
         const deleteMainQuery = `DELETE FROM ${categoryName} WHERE id = ?`;
         await db.query(deleteMainQuery, [event_id]);
