@@ -229,7 +229,7 @@ export const getAllEvents = async (req, res) => {
 
         for (const { cat_id, category } of eventTypes) {
 
-            const tableName = category;
+            const tableName = category.toLowerCase();
             const alias = tableName.slice(0, 3).toLowerCase();
 
             const [tableExists] = await db.query(`SHOW TABLES LIKE ?`, [tableName]);
