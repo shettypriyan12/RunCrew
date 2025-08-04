@@ -23,7 +23,7 @@ const SingleEvent = () => {
     const event1 = useSelector(state => state.events.searchedEvents);
     const status1 = useSelector(state => state.events.searchStatus);
     const event2 = useSelector(state => state.events.events);
-    const status2 = useSelector(state => state.events.allStatus);
+    // const status2 = useSelector(state => state.events.allStatus);
 
     // console.log(event1);
     const dispatch = useDispatch();

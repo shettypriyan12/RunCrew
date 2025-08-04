@@ -320,6 +320,7 @@ export const getAllEvents = async (req, res) => {
 export const getGroupedEventWithTagsByName = async (req, res) => {
 
     const eName = req.params.event_name;
+    
     const getCategoriesSQL = `SELECT id AS cat_id, category FROM event`;
 
     try {
@@ -329,11 +330,12 @@ export const getGroupedEventWithTagsByName = async (req, res) => {
         const unionQueries = [];
 
         for (const { cat_id, category } of eventTypes) {
+            const tableName = category.toLowerCase();
             const alias = category.slice(0, 3).toLowerCase();
             const query = `
                 SELECT 
                     ${cat_id} AS cat_id,
-                    '${category}' AS event_type,
+                    '${tableName}' AS event_type,
                     t.event_id,
                     ${alias}.name AS event_name,
                     ${alias}.start,
@@ -343,7 +345,7 @@ export const getGroupedEventWithTagsByName = async (req, res) => {
                     ${alias}.location,
                     ${alias}.created_at,
                     GROUP_CONCAT(t.tag SEPARATOR ', ') AS tags
-                FROM ${category} ${alias}
+                FROM ${tableName} ${alias}
                 JOIN tags t ON t.cat_id = ${cat_id} AND t.event_id = ${alias}.id
                 GROUP BY t.cat_id, t.event_id
             `;
