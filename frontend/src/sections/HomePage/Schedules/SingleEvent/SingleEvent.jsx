@@ -19,7 +19,7 @@ const SingleEvent = () => {
         window.scrollTo(0, 0);
     }, []);
 
-    const dslugify = (name) => name.replace(/-/gi, ' ');
+    const dslugify = (name) => name.trim().replace(/-/gi, ' ');
     const event1 = useSelector(state => state.events.searchedEvents);
     const status1 = useSelector(state => state.events.searchStatus);
     const event2 = useSelector(state => state.events.events);

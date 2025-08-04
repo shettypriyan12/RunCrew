@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 const SinfoCard = ({ data }) => {
 
-    const slugify = (name) => name.replace(/\s+/gi, '-');
+    const slugify = (name) => name.trim().replace(/\s+/gi, '-');
 
     return (
         <>
