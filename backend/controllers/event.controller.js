@@ -305,6 +305,7 @@ export const getAllEvents = async (req, res) => {
             data: resultWithId,
         });
     } catch (err) {
+        console.error("🔥 getAllEvents error:", err);
         return failure(res, 500, "Internal server error");
     }
 };

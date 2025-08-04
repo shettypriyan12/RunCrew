@@ -123,8 +123,7 @@ const EventPage = () => {
                                             </Col>
                                             <Col xs={9} sm={9} lg={3} className={c.erght}>
                                                 <Link to={`/event/${slugify(d.event_name)}`}>
-                                                    {/* <img src={`${import.meta.env.VITE_BACKEND_URL}${d.img}`} alt={`${d.event_name} img`} /> */}
-                                                    <img src={`https://runcrew-vxgb.onrender.com${d.img}`} alt={`${d.event_name} img`} />
+                                                    <img src={`${import.meta.env.VITE_BACKEND_URL}${d.img}`} alt={`${d.event_name} img`} />
                                                 </Link>
                                             </Col>
                                         </Row>
