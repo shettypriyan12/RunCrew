@@ -240,20 +240,20 @@ const Header1 = () => {
                                 <Link to={"/"}><Accordion.Body bsPrefix={classes.menubody}>Cart</Accordion.Body></Link>
                                 <Link to={"/"}><Accordion.Body bsPrefix={classes.menubody}>Checkout</Accordion.Body></Link>
                             </Accordion.Item> */}
-                            <NavLink to="/" >
-                                <button >Home</button>
+                            <NavLink to="/" onClick={handleClose} >
+                                Home
                             </NavLink>
-                            <NavLink to="/about-us" >
-                                <button >About Us</button>
+                            <NavLink to="/about-us" onClick={handleClose} >
+                                About Us
                             </NavLink>
-                            <NavLink to="/events" >
-                                <button >Events</button>
+                            <NavLink to="/events" onClick={handleClose} >
+                                Events
                             </NavLink>
-                            <NavLink to="/our-team" >
-                                <button >Our Team</button>
+                            <NavLink to="/our-team" onClick={handleClose} >
+                                Our Team
                             </NavLink>
-                            <NavLink to="/contacts" >
-                                <button >CONTACTS</button>
+                            <NavLink to="/contacts" onClick={handleClose} >
+                                Contacts
                             </NavLink>
                         </Accordion>
 
