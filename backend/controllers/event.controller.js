@@ -232,6 +232,12 @@ export const getAllEvents = async (req, res) => {
             const tableName = category;
             const alias = tableName.slice(0, 3).toLowerCase();
 
+            const [tableExists] = await db.query(`SHOW TABLES LIKE ?`, [tableName]);
+            if (tableExists.length === 0) {
+                console.warn(`⚠️ Skipping missing table: ${tableName}`);
+                continue; 
+            }
+
             const query = `
                 SELECT 
                     ${cat_id} AS cat_id,
