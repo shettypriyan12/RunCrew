@@ -18,7 +18,6 @@ import resultRoutes from './routes/eventResults.route.js'
 import adminStatRoutes from './routes/adminStats.route.js'
 
 const app = express();
-// const port = process.env.PORT || 5000;
 
 // MySQL connection
 
@@ -33,14 +32,15 @@ export const db = mysql.createPool({
   queueLimit: 0,
 });
 
-try {
-  const connection = await db.getConnection();
-  console.log('✅ Connected to MySQL DB');
-  connection.release();
-} catch (err) {
-  console.error('❌ Database connection failed:', err.message);
-  process.exit(1);
-}
+(async () => {
+  try {
+    const connection = await db.getConnection();
+    console.log('✅ Connected to MySQL DB');
+    connection.release();
+  } catch (err) {
+    console.error('❌ Database connection failed:', err.message);
+  }
+})();
 
 app.use(cors(
   {
@@ -56,10 +56,6 @@ app.get('/', (req, res) => {
   res.send("Server is running....");
 });
 
-app.listen(port, () => {
-  console.log("🚀 Server is running on " + port);
-});
-
 
 app.use('/v1/runcrew', userRoutes);
 app.use('/v1/runcrew', contactRoutes);
@@ -72,3 +68,10 @@ app.use('/v1/runcrew', registrationRoutes);
 app.use('/v1/runcrew', paymentRoutes);
 app.use('/v1/runcrew', resultRoutes);
 app.use('/v1/runcrew', adminStatRoutes);
+
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log("🚀 Server is running on " + PORT);
+});
+
