@@ -18,7 +18,7 @@ import resultRoutes from './routes/eventResults.route.js'
 import adminStatRoutes from './routes/adminStats.route.js'
 
 const app = express();
-const port = process.env.PORT || 5000;
+// const port = process.env.PORT || 5000;
 
 // MySQL connection
 
@@ -56,9 +56,9 @@ app.get('/', (req, res) => {
   res.send("Server is running....");
 });
 
-app.listen(port, () => {
-  console.log("🚀 Server is running on " + port);
-});
+// app.listen(port, () => {
+//   console.log("🚀 Server is running on " + port);
+// });
 
 
 app.use('/v1/runcrew', userRoutes);
