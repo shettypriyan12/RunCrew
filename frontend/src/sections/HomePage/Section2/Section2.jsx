@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 import { LuNotebookPen } from "react-icons/lu";
 import { FaMapLocationDot, FaSuitcaseMedical, FaBottleWater } from "react-icons/fa6";
-import { CgArrowLongRight } from "react-icons/cg";
+// import { CgArrowLongRight } from "react-icons/cg";
 import { GiShorts } from "react-icons/gi";
 import { Link } from 'react-router-dom';
 
@@ -57,26 +57,26 @@ const Section2 = () => {
     const activeData = data.find(d => d.id === activeTab);
 
     useEffect(() => {
-        startAutoSlide();
-        return () => stopAutoSlide();
+        startSlide();
+        return () => stopSlide();
     }, []);
 
-    const startAutoSlide = () => {
-        stopAutoSlide();
-        intervalRef.current = setInterval(() => {
+    const startSlide = () => {
+        stopSlide();
+        intervalRef.current = setInterval(() => {~
             setActiveTab(prev => (prev === tab.length ? 1 : prev + 1));
         }, 6000);
     };
 
-    const stopAutoSlide = () => {
+    const stopSlide = () => {
         if (intervalRef.current) {
             clearInterval(intervalRef.current);
         }
     };
 
-    const handleTabClick = (id) => {
+    const handleClick = (id) => {
         setActiveTab(id);
-        startAutoSlide();
+        startSlide();
     };
 
     return (
@@ -119,11 +119,11 @@ const Section2 = () => {
                             <div
                                 key={t.id}
                                 className={`${classes.tab} ${activeTab === t.id ? classes.active : ''}`}
-                                onClick={() => handleTabClick(t.id)}
+                                onClick={() => handleClick(t.id)}
                                 role="button"
                                 tabIndex={0}
                                 onKeyDown={(e) => {
-                                    if (e.key === 'Enter' || e.key === ' ') handleTabClick(t.id);
+                                    if (e.key === 'Enter' || e.key === ' ') handleClick(t.id);
                                 }}
                             >
                                 <h2>{t.name}</h2>
